@@ -4,11 +4,11 @@ export const Container = styled.div`
   height: auto;
   width: auto;
   border: 2px solid black;
-  background-image: url("https://www.outfrontmedia.com/-/media/images/ofm/markets/san-francisco/san-francisco-hero.jpg");
-  /* background-image:url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fstefanieshank.tumblr.com%2Fpost%2F149091707244%2Fbubbles-blog-insta&psig=AOvVaw17me6i0v6wlrEazOzBBUvR&ust=1651097477721000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCOjY-NjgsvcCFQAAAAAdAAAAABAv") ; */
+  /* background-image: url("https://thumbs.dreamstime.com/b/realistic-water-bubbles-transparent-gradient-pastel-color-background-abstract-image-178130326.jpg"); */
   background-repeat: no-repeat, repeat;
   background-position: center;
   background-size: cover;
+  background-color: white;
 
   /* background-image:${(props) =>
     props.backgroundImage ||
@@ -33,5 +33,5 @@ export const WelcomeBannerContainer = styled.div`
 export const QuoteContainer = styled.div`
   display: flex;
   justify-content: end;
-  -webkit-text-stroke: 2px white;
+  -webkit-text-stroke: 2px black;
 `;

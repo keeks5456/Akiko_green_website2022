@@ -1,3 +1,4 @@
+import {css} from './App.css'
 import {Routes, Route} from 'react-router-dom';
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
@@ -10,14 +11,21 @@ function App() {
   return (
     <>
     <Navbar />
-    <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/about" element={<About />} />
-    <Route path="/projects" element={<Projects />} />
-    <Route path="/blogs" element={<Blogs />} />
-    <Route path="/contact" element={<Contact />} />
-    </Routes>
+    <Home />
+    <About />
+    <Projects />
+    <Blogs />
+    <Contact />
     <Footer />
+
+    // <Routes>
+    // <Route path="/" element={<Home />} />
+    // <Route path="/about" element={<About />} />
+    // <Route path="/projects" element={<Projects />} />
+    // <Route path="/blogs" element={<Blogs />} />
+    // <Route path="/contact" element={<Contact />} />
+    // </Routes>
+    
     </>
   );
 }
