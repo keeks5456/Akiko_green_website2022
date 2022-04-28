@@ -1,11 +1,11 @@
 import React from "react";
-import { AboutContainer , ParagraphContainer} from "../Styles-Components/AboutStyles";
+import { AboutContainer , ParagraphContainer, Paragraph} from "../Styles-Components/AboutStyles";
 const About = () => {
   return (
     <AboutContainer>
       <h1>Who is Akiko Green?</h1>
       <ParagraphContainer>
-        <p>A san fran</p>
+        <Paragraph>A San Francisco native.</Paragraph>
       </ParagraphContainer>
     </AboutContainer>
   );

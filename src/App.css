@@ -1,22 +1,21 @@
 
 .main-nav{
-   margin-right: 20px;
+  color: black;
   text-decoration: none;
-  padding: 10px;
-  border-radius: 25px;
-  background-color: aqua;
+  padding-right: 30px
+}
+.main-nav:hover{
+  color: pink;
+  border-radius: 5px;
+  transition: all 1s ease-in-out;
 }
 .active{
-  /* background-color: orange; */
-  color: black;
-  
+  color: pink;
+  padding-right: 30px} 
 
-
-
-} 
-
-.main-nav:hover{
-  background-color: white;
+.active:hover{
+  color: pink;
   border-radius: 5px;
-  /* transition: 1s ease-in-out; */
+  transition: all 2s ease-out;
+
 }
