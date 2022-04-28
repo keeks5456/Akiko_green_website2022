@@ -1,15 +1,17 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 //styles
-import { NavContainer } from '../Styles-Components/NavbarStyles';
+import { NavContainer, } from '../Styles-Components/NavbarStyles';
 const Navbar = () => {
+
+
   return (
     <NavContainer>
-    <Link to="/">Home</Link>
-    <Link to="/about">About</Link>
-    <Link to="/projects">Projects</Link>
-    <Link to="/blogs">Blogs</Link>
-    <Link to="/contact">Contact</Link>
+    <NavLink to="/home" className={({isActive}) => (isActive ? "active" : 'main-nav')} >Home</NavLink>
+    <NavLink to='/about' className={({isActive}) => (isActive ? "active" : 'main-nav')}  >About</NavLink>
+    <NavLink to='/projects' className={({isActive}) => (isActive ? "active" : 'main-nav')}  >Projects</NavLink>
+    <NavLink to='/blogs' className={({isActive}) => (isActive ? "active" : 'main-nav')}   >Blogs</NavLink>
+    <NavLink to='/contacts' className={({isActive}) => (isActive ? "active" : 'main-nav')}  >Contact</NavLink>
     </NavContainer>
   )
 }

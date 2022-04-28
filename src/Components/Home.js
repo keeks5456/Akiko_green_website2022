@@ -5,6 +5,7 @@ import {
   Container,
   NameHeader,
   QuoteContainer,
+  Quote,
   // BackgroundImage,
 } from "../Styles-Components/HomeStyles";
 const Home = () => {
@@ -15,7 +16,7 @@ const Home = () => {
         <h2>Welcome To My Website</h2>
       </WelcomeBannerContainer>
       <QuoteContainer>
-        <p>A Soft Woman Is A Wolf Caught In Meditation</p>
+        <Quote>A Soft Woman Is A Wolf Caught In Meditation</Quote>
       </QuoteContainer>
     </Container>
   );
