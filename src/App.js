@@ -11,21 +11,14 @@ function App() {
   return (
     <>
     <Navbar />
-    <Home />
-    <About />
-    <Projects />
-    <Blogs />
-    <Contact />
+    <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/about" element={<About />} />
+    <Route path="/projects" element={<Projects />} />
+    <Route path="/blogs" element={<Blogs />} />
+    <Route path="/contact" element={<Contact />} />
+    </Routes>
     <Footer />
-
-    // <Routes>
-    // <Route path="/" element={<Home />} />
-    // <Route path="/about" element={<About />} />
-    // <Route path="/projects" element={<Projects />} />
-    // <Route path="/blogs" element={<Blogs />} />
-    // <Route path="/contact" element={<Contact />} />
-    // </Routes>
-    
     </>
   );
 }
