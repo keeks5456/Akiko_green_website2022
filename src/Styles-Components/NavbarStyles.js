@@ -14,6 +14,9 @@ export const NavContainer = styled.div`
   /* position: fixed; */
   top: 0;
   width: 100%;
+  background-color:#005f73 ;
+  font-family: 'Leckerli One', cursive;
+
 `;
 
 //do a z index fixed positioning 
