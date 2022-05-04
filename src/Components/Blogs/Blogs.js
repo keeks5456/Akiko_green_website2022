@@ -1,53 +1,70 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import { ShowBlogs } from "./ShowBlogs";
-const Blogs = () => {
-  const mediumURL =
-    "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@agreen17";
-  const [profile, setProfile] = useState({
-    ptitle: "",
-    name: "Akiko Green",
-    avatar: "",
-    profileUrl: "",
-  });
+import React from "react";
 
-  const [blogs, setBlogs] = useState({
-    items:[],
-    isLoading: true,
-    erorr: null
-  })
+const Blogs = ({blogs, profile}) => {
+  function toText(node) {
+    //move this to utilities later and import from there
+    // console.log(node)
+    let tag = document.createElement("div");
+    tag.innerHTML = node;
+    node = tag.innerText;
+    return node;
+  } //end of toText
 
-  useEffect(() => {
-    const fetchBlogs = () => {
-    
-      axios.get(mediumURL).then((res) => {
-        const userAvatar = res.data.feed.image;
-        const title = res.data.feed.title;
-        const link = res.data.feed.url;
-        const blogs = res.data.items;
-        const posts = blogs.map((post) => post.categories.length > 0);
-        console.log(posts)
-          setProfile((p) => ({
-            ...p,
-            ptitle: title,
-            profileUrl: link,
-            avatar: userAvatar,
-          }));
-          setBlogs({ items: posts, isLoading:false });
-        })
-        .catch((error) => {
-          console.log(error.message);
-          setBlogs({error:error.message})
-        });
-    };
-    fetchBlogs();
-  }, []);
+  toText();
 
-  
-console.log(blogs.items)
-  return <div>
-  <ShowBlogs blogs={blogs} profile={profile} />
-  </div>;
+  function shortText(text, start, len) {
+    return text.length > len ? `${text.slice(start, len)}...` : text;
+  }
+
+  function allBlogs() {
+    if (blogs.items) {
+      console.log(blogs.items);
+      return blogs.items && blogs.items.map((post, index) => (
+        <div className="whole-card" key={index}>
+          <div className="card-image" style={{ width: "10vw" }}>
+            <img
+              src={post.thumbnail}
+              className="blog__topImg"
+              alt="thumbnail"
+            ></img>
+            <div className="authorImg">
+              <a
+                href={profile.profileUrl}
+                rel="noopener noreferrer"
+                target="_blank"
+                aria-hidden="true"
+               
+              ></a>
+            </div>
+          </div>
+          <div className="card-body">
+            <h5 className="card-title">
+              <a
+                href={post.link}
+                className="postTitle"
+                rel="noreferrer"
+                target="_blank"
+              >
+                {shortText(post.title, 0, 80)}
+              </a>
+            </h5>
+            <p className="cardText">
+              {shortText(toText(post.description), 0, 300)}
+            </p>
+          </div>
+        </div>
+      ));
+    }
+  }
+  allBlogs();
+
+  console.log(blogs.items);
+  return (
+    <div className="blog-container">
+    <div className="blogs-container"></div>
+    {blogs.isLoading ? 'Loading...' : allBlogs()}
+</div>
+  );
 };
 
 export default Blogs;
