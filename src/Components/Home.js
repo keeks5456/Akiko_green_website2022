@@ -1,5 +1,5 @@
 import React from "react";
-//stlesw
+import Navbar from "./Navbar";
 import {
   WelcomeBannerContainer,
   Container,
@@ -10,7 +10,9 @@ import {
 } from "../Styles-Components/HomeStyles";
 const Home = () => {
   return (
+    <>
     <Container >
+    <Navbar />
       <NameHeader>Akiko Green</NameHeader>
       <WelcomeBannerContainer>
         <h2>Welcome To My Website</h2>
@@ -19,6 +21,7 @@ const Home = () => {
         <Quote>A Soft Woman Is A Wolf Caught In Meditation</Quote>
       </QuoteContainer>
     </Container>
+    </>
   );
 };
 
