@@ -8,13 +8,13 @@ export const NavContainer = styled.div`
   display: flex;
   position:relative ;
   justify-content: end;
-  background-color: white;
+  
   font-size: 1.5em;
   /* overflow: hidden; */
   /* position: fixed; */
   top: 0;
   width: 100%;
-  background-color:#005f73 ;
+  /* background-color:#005f73 ; */
   font-family: 'Leckerli One', cursive;
 
 `;

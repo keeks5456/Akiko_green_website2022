@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const BlogContainer = styled.div`
+  height: 100%;
   display: flex;
   flex-flow: column wrap-reverse;
   background-color: #005f73;
-  justify-content:space-evenly ;
+  justify-content: space-evenly;
 `;
 
 export const BlogCard = styled.div`
@@ -17,7 +18,7 @@ export const BlogCard = styled.div`
   width: 48em;
   background-color: white;
   font-size: large;
-  font-weight:bold ;
+  font-weight: bold;
 `;
 
 export const BlogImg = styled.img`
@@ -29,17 +30,17 @@ export const BlogImg = styled.img`
 `;
 
 export const CardTitle = styled.h3`
-  padding-bottom:1em ;
+  padding-bottom: 1em;
   font-family: "Leckerli One", cursive;
-`
+`;
 
-export const AnchorTag = styled.a` 
+export const AnchorTag = styled.a`
   color: black;
-  margin-bottom:1em ;
-  transition: all 1s ease-out ;
-  
-  &:hover{
-    transition: all 1s ease-in-out ;
+  margin-bottom: 1em;
+  transition: all 1s ease-out;
+
+  &:hover {
+    transition: all 1s ease-in-out;
     color: #005f73;
   }
-`
+`;
