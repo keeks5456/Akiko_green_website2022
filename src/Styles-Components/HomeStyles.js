@@ -16,18 +16,18 @@ export const Container = styled.div`
 `;
 
 export const NameHeader = styled.h1`
-  margin-top: 2em;
-  margin-left: 13em;
-  -webkit-text-stroke: 2px white;
-  font-family: "Leckerli One" cursive;
-  font-size: 400;
-  font-size: 4em;
+  margin-top: 1em;
+  margin-left: 8em;
+  font-family: "Inknut Antiqua", serif;
+  color: white;
+  font-size: 75px;
+  letter-spacing:5px ;
 `;
 
 export const WelcomeBannerContainer = styled.div`
   text-align: center;
   -webkit-text-stroke: 2px white;
-  font-family: "Leckerli One" cursive;
+  font-family: "Inknut Antiqua", serif;
   font-size: 40px;
 `;
 
