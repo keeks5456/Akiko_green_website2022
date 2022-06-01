@@ -1,7 +1,6 @@
 import styled from "styled-components";
 //parent
 export const AboutContainer = styled.div`
-  
   height: 100vh;
   margin-top: 0;
   text-align: center;
@@ -23,26 +22,30 @@ export const AboutContainer = styled.div`
 `;
 
 export const AboutHeader = styled.h1`
-  
+  margin-top: 1em;
 `;
 
-export const ParagraphContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  position: relative;
-  width: 701px;
-  height: 336px;
-  background-color: white;
-  padding: 10px;
-  border-radius: 34px;
-  &:before {
-    content: "";
-    position: absolute;
-    opacity: 0.3;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+export const ThoughtBox = styled.div`
+  margin-top: 3em;
+  opacity: 0.7;
+
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+
+  @keyframes floating {
+    from {
+      transform: translate(0, 0px);
+    }
+    65% {
+      transform: translate(0, 15px);
+    }
+    to {
+      transform: translate(0, -0px);
+    }
   }
 `;
 
