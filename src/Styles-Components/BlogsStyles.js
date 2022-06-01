@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const BlogContainer = styled.div`
   height: 100%;
   display: flex;
-  flex-flow: column wrap-reverse;
+  flex-flow: column ;
   background-color: #005f73;
   justify-content: space-evenly;
 `;

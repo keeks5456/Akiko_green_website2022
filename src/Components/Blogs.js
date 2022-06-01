@@ -1,10 +1,11 @@
 import React from "react";
+import Navbar from "./Navbar";
 import {
   BlogContainer,
   BlogCard,
   BlogImg,
   AnchorTag,
-  CardTitle
+  CardTitle,
 } from "../Styles-Components/BlogsStyles";
 const Blogs = ({ blogs, profile }) => {
   function toText(node) {
@@ -64,7 +65,12 @@ const Blogs = ({ blogs, profile }) => {
 
   console.log(blogs.items);
   return (
-    <BlogContainer>{blogs.isLoading ? "Loading..." : allBlogs()}</BlogContainer>
+    <>
+      <BlogContainer>
+        <Navbar />
+        {blogs.isLoading ? "Loading..." : allBlogs()}
+      </BlogContainer>
+    </>
   );
 };
 

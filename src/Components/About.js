@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "./Navbar";
 import {
   AboutContainer,
   ParagraphContainer,
@@ -8,11 +9,9 @@ import {
 const About = () => {
   return (
     <AboutContainer>
+    <Navbar direction="column"/>
       <AboutHeader>Who is Akiko Green?</AboutHeader>
-    <ParagraphContainer>
-       <Paragraph>
-      </Paragraph>
-  </ParagraphContainer> 
+
     </AboutContainer>
   );
 };

@@ -11,16 +11,13 @@ import {
 const Home = () => {
   return (
     <>
-    <Container >
-    <Navbar />
-      <NameHeader>Akiko Green</NameHeader>
-      <WelcomeBannerContainer>
-        <h2>Welcome To My Website</h2>
-      </WelcomeBannerContainer>
-      <QuoteContainer>
-        <Quote>A Soft Woman Is A Wolf Caught In Meditation</Quote>
-      </QuoteContainer>
-    </Container>
+      <Container>
+        <Navbar />
+        <NameHeader>Akiko Green</NameHeader>
+        <QuoteContainer>
+          <Quote> idea for quotes generator NameHeader</Quote>
+        </QuoteContainer>
+      </Container>
     </>
   );
 };

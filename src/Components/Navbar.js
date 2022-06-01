@@ -4,6 +4,11 @@ import { NavLink } from "react-router-dom";
 import { NavContainer, } from '../Styles-Components/NavbarStyles';
 const Navbar = () => {
 
+  // const [toggleStyles, setToggleStyles] = useState(false)
+
+  // const styledComponentToggle = () =>{
+  //   setToggleStyles(true)
+  // }
 
   return (
     <NavContainer>
