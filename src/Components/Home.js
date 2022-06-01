@@ -15,7 +15,9 @@ const Home = () => {
         <Navbar />
         <NameHeader>Akiko Green</NameHeader>
         <QuoteContainer>
-          <Quote> idea for quotes generator NameHeader</Quote>
+          <Quote>
+          {/*create a quotes generator here for fun*/}
+          </Quote>
         </QuoteContainer>
       </Container>
     </>
