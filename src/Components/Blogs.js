@@ -31,27 +31,27 @@ const Blogs = ({ blogs, profile }) => {
         blogs.items.map((post, index) => (
           <BlogCard key={index}>
             <div className="card-image">
-              <BlogImg src={post.thumbnail} alt="thumbnail"></BlogImg>
-              <div className="authorImg">
-                <a
-                  href={profile.profileUrl}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  aria-hidden="true"
-                ></a>
-              </div>
+            <div className="authorImg">
+            <a
+            href={profile.profileUrl}
+            rel="noopener noreferrer"
+            target="_blank"
+            aria-hidden="true"
+            ></a>
+            </div>
             </div>
             <div className="card-body">
-              <CardTitle>
-                <AnchorTag
-                  href={post.link}
-                  className="postTitle"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  {shortText(post.title, 0, 80)}
-                </AnchorTag>
-              </CardTitle>
+            <CardTitle>
+            <AnchorTag
+            href={post.link}
+            className="postTitle"
+            rel="noreferrer"
+            target="_blank"
+            >
+            {shortText(post.title, 0, 80)}
+            </AnchorTag>
+            </CardTitle>
+            <BlogImg src={post.thumbnail} alt="thumbnail"></BlogImg>
               <p className="cardText">
                 {shortText(toText(post.description), 0, 300)}
               </p>
@@ -66,8 +66,8 @@ const Blogs = ({ blogs, profile }) => {
   console.log(blogs.items);
   return (
     <>
-      <BlogContainer>
-        <Navbar />
+    <BlogContainer>
+    <Navbar />
         {blogs.isLoading ? "Loading..." : allBlogs()}
       </BlogContainer>
     </>
