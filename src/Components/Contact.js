@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import Navbar from "./Navbar";
 import {
   FormContainer,
+  FormBox,
   FormInput,
   FormHeader,
   FormTextarea,
@@ -35,31 +36,32 @@ const Contact = () => {
     <>
     <FormContainer>
     <Navbar />
-    <FormHeader>Contact me</FormHeader>
+    <FormBox>
+    <FormHeader>Let's Keep In Touch</FormHeader>
         <form ref={form} onSubmit={sendEmail}>
-          <p className="form-text">Name:</p>
+         {/* <p className="form-text">Name:</p> */}
           <FormInput
             type="text"
             name="user_name"
             placeholder="Full Name"
           ></FormInput>
           <br />
-          <p className="form-text">Email:</p>
-          <FormInput
+         {/* <p className="form-text">Email:</p> */}
+         <FormInput
             type="email"
             name="user_email"
             placeholder="Email"
           ></FormInput>
           <br />
-          <p className="form-text">Subject:</p>
-          <FormInput
+         {/* <p className="form-text">Subject:</p> */}
+         <FormInput
             type="text"
             name="Subject"
             placeholder="Subject"
           ></FormInput>
           <br />
-          <p className="form-text">Message:</p>
-          <FormTextarea
+         {/* <p className="form-text">Message:</p> */}
+         <FormTextarea
             name="message"
             placeholder="Please add message here... :)"
           ></FormTextarea>
@@ -68,6 +70,7 @@ const Contact = () => {
             Send Email
           </SubmitButton>
         </form>
+        </FormBox>
       </FormContainer>
     </>
   );

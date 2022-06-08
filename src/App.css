@@ -31,7 +31,19 @@
   
 }
 
+input::-webkit-input-placeholder {
+	color: black;
+}
+/* input:focus::-webkit-input-placeholder {
+	color: whitesmoke;
+} */
 
+textarea::-webkit-input-placeholder {
+	color: black;
+}
+/* textarea:focus::-webkit-input-placeholder {
+	color: whitesmoke;
+} */
 
 .bubble {
 	height: 250px;
