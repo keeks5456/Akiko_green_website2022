@@ -37,7 +37,6 @@ function App() {
           const link = res.data.feed.url;
           const blogs = res.data.items;
           const posts = blogs.filter((post) => post.categories.length > 0);
-          console.log(posts);
           setProfile((p) => ({
             ...p,
             ptitle: title,
@@ -54,7 +53,6 @@ function App() {
     fetchBlogs();
   }, [mediumURL]);
 
-  console.log(blogs.items)
 
   return (
     <>

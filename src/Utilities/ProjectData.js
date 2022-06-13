@@ -1,5 +1,7 @@
-import IMG3 from '../Images/doggyDatesImg.png'
 import IMG1 from '../Images/qpq.gif'
+import IMG2 from '../Images/interactive-app.jpg'
+import IMG3 from '../Images/doggyDatesImg.png'
+import IMG4 from '../Images/heidie-skin.png'
 
 export const projectData = [
   
@@ -14,7 +16,7 @@ export const projectData = [
   {
     //interactive rating
     id:2,
-    // image: IMG2,
+    image: IMG2,
     title: "Interactive Rating App",
     github: "https://github.com/keeks5456/Interactive-rating-app",
     demo: "https://akiko-interactive-rate-app.netlify.app/",
@@ -30,7 +32,7 @@ export const projectData = [
   {
    
     id:4,
-    // image: IMG4,
+    image: IMG4,
     title: "Heidie-Skin16",
     github: "https://github.com/mgdeveloper45/Heidi-Skin16",
     demo: "",

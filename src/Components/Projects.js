@@ -1,10 +1,36 @@
-import React from 'react'
-import {projectData} from '../Utilities/ProjectData'
+import React from "react";
+import {
+  ProjectContainer,
+  ProjectCard,
+  ProjectImg,
+  ProjectCardContainer
+} from "../Styles-Components/ProjectStyles";
+import { projectData } from "../Utilities/ProjectData";
+import Navbar from "./Navbar";
 const Projects = () => {
-  console.log(projectData)
-  return (
-    <div>Projects</div>
-  )
-}
+  const allProjects = () => {
+    if (projectData) {
+      return projectData?.map((project) => (
+        <ProjectCard key={project.id}>
+          <ProjectImg src={project.image} alt={project.title} />
+          <h1>{project.title}</h1>
+        </ProjectCard>
+      ));
+    }
+  };
 
-export default Projects
+  allProjects();
+
+  return (
+    <>
+      <ProjectContainer>
+        <Navbar />
+        <ProjectCardContainer>
+        {allProjects()}
+        </ProjectCardContainer>
+      </ProjectContainer>
+    </>
+  );
+};
+
+export default Projects;
