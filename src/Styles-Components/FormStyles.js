@@ -1,40 +1,29 @@
 import styled from "styled-components";
 
-export const FormContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background-image: url("https://animesher.com/orig/1/153/1538/15387/animesher.com_minimalist-anime-boy-howl-1538759.png");
-  height: 100vh;
-`;
 
-export const FormHeader = styled.h1`
-  text-align: center;
+export const FormHeader = styled.h3`
   font-family: "Leckerli One", cursive;
-  font-size: 63px;
-  margin-right: 3em;
 `;
 
 export const FormBox = styled.div`
   display: flex;
-  justify-content: flex-start;
-  height: 23em;
-  width: 0%;
-  object-fit: fill;
-  transform: translate(10px, 20%);
+  flex-direction:column ;
+  justify-content:center ;
+  text-align: center;
+  width: 13em;
+  padding:15px ;
+  border:1px solid white ;
 `;
 export const FormInput = styled.input`
   margin: 10px 0 10px 2px;
-  height: 3em;
-  width: 31em;
+  height: 2em;
+  width: 14em;
   border-radius: 4px;
   outline: none;
   border: none;
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
-
-  padding-left: 10px;
-  /* background:transparent ; */
+  border-bottom: 1px solid black;
+  border-top:none;
+  background:transparent ;
 
   &:focus {
     background: transparent;
@@ -46,18 +35,17 @@ export const FormInput = styled.input`
 
 export const FormTextarea = styled.textarea`
   margin: 10px 0 10px 2px;
-  height: 2em;
+  height: 5em;
   border-radius: 10px;
   text-align: center;
   outline: none;
-  height: 30%;
   width: 100%;
   resize: none;
   border: none;
   border-bottom: 2px solid black;
-  border-top: 2px solid black;
+  border-top:none;
 
-  /* background:transparent ; */
+  background:transparent ;
 
   &:focus {
     background: transparent;

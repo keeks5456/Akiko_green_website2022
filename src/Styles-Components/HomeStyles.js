@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 100vh;
-  width: auto;
+  max-width: auto;
+  max-width: auto;
   margin: 0;
   background-color: #005f73;
   background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c6c07d60-1481-4dce-af4a-de3bd075f07a/dc87vm4-3083eb14-77a7-4b76-8700-f56e0d41693a.png/v1/fill/w_1600,h_898,strp/san___princess_mononoke_minimalist_wallpaper____by_goldhue_dc87vm4-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODk4IiwicGF0aCI6IlwvZlwvYzZjMDdkNjAtMTQ4MS00ZGNlLWFmNGEtZGUzYmQwNzVmMDdhXC9kYzg3dm00LTMwODNlYjE0LTc3YTctNGI3Ni04NzAwLWY1NmUwZDQxNjkzYS5wbmciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.KZtJFjLelYk5yTYAnE0P1Q4mNTgxighp_mSYO_J4rqc");
@@ -17,12 +17,38 @@ export const Container = styled.div`
 `;
 
 export const NameHeader = styled.h1`
-  margin-top: 1em;
-  margin-left: 8em;
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+
   font-family: "Inknut Antiqua", serif;
   color: white;
   font-size: 75px;
   letter-spacing: 5px;
+
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: typing 3.5s steps(40, end),
+   blink-caret .75s step-end infinite;
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: white;
+    }
+  }
 
   @media (max-width: 600px) {
     margin-top: 63px;

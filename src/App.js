@@ -7,11 +7,10 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
 import Blogs from "./Components/Blogs";
-import Contact from "./Components/Contact";
+// import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 
 function App() {
-
   const mediumURL =
     "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@agreen17";
   const [profile, setProfile] = useState({
@@ -53,16 +52,17 @@ function App() {
     fetchBlogs();
   }, [mediumURL]);
 
-
   return (
     <>
-     
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/blogs" element={<Blogs blogs={blogs} profile={profile} />} />
-        <Route path="/contacts" element={<Contact />} />
+        <Route
+          path="/blogs"
+          element={<Blogs blogs={blogs} profile={profile} />}
+        />
+        {/* <Route path="/contacts" element={<Contact />} /> */}
       </Routes>
       <Footer />
     </>
