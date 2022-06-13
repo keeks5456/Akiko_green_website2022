@@ -3,7 +3,9 @@ import {
   ProjectContainer,
   ProjectCard,
   ProjectImg,
-  ProjectCardContainer
+  ProjectCardContainer,
+  CardTitle,
+  AnchorTag,
 } from "../Styles-Components/ProjectStyles";
 import { projectData } from "../Utilities/ProjectData";
 import Navbar from "./Navbar";
@@ -13,7 +15,10 @@ const Projects = () => {
       return projectData?.map((project) => (
         <ProjectCard key={project.id}>
           <ProjectImg src={project.image} alt={project.title} />
-          <h1>{project.title}</h1>
+          <CardTitle>{project.title}</CardTitle>
+          <AnchorTag href={project.github} rel="noreferrer" target="_blank">Github</AnchorTag>
+          <AnchorTag href={project.demo} rel="noreferrer" target="_blank">Demo</AnchorTag>
+
         </ProjectCard>
       ));
     }
@@ -25,9 +30,7 @@ const Projects = () => {
     <>
       <ProjectContainer>
         <Navbar />
-        <ProjectCardContainer>
-        {allProjects()}
-        </ProjectCardContainer>
+        <ProjectCardContainer>{allProjects()}</ProjectCardContainer>
       </ProjectContainer>
     </>
   );
