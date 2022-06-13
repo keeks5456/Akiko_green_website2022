@@ -11,7 +11,8 @@ export const ProjectContainer = styled.div`
 export const ProjectCardContainer = styled.div`
   display: flex;
   justify-content: center;
-  flex-flow:wrap ;
+  flex-flow: wrap;
+  text-align:center ;
 `;
 
 export const ProjectCard = styled.div`
@@ -25,4 +26,19 @@ export const ProjectImg = styled.img`
   background-position: center;
   height: 13em;
   width: 26em;
+`;
+
+export const CardTitle = styled.h2`
+  font-family: "Leckerli One", cursive;
+  text-align: center;
+`;
+export const AnchorTag = styled.a`
+  color: black;
+  margin-bottom: 1em;
+  padding: 10px;
+
+
+  &:hover {
+    color: #005f73;
+  }
 `;
