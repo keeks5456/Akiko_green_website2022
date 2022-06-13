@@ -1,29 +1,31 @@
 import React from "react";
 import Navbar from "./Navbar";
+import Contact from "./Contact";
 import {
-  WelcomeBannerContainer,
+  // WelcomeBannerContainer,
   Container,
   NameHeader,
-  QuoteContainer,
-  Quote,
-  // BackgroundImage,
+  // QuoteContainer,
+  // Quote,
+
 } from "../Styles-Components/HomeStyles";
 const Home = () => {
   return (
     <>
       <Container>
-        <Navbar />
-        <NameHeader>Akiko Green</NameHeader>
-        <QuoteContainer>
-          <Quote>
-          {/*create a quotes generator here for fun*/}
-          </Quote>
-        </QuoteContainer>
-      </Container>
-    </>
-  );
-};
-
-export default Home;
-
-/*have the welcome banner bouncing or floating?*/
+      <Navbar />
+      <NameHeader>Akiko Green</NameHeader>
+      <Contact />
+        </Container>
+        </>
+        );
+      };
+      
+      export default Home;
+      
+    
+      ///<QuoteContainer>
+      //   <Quote>
+      //   {/*create a quotes generator here for fun*/}
+      //   </Quote>
+      // </QuoteContainer>
