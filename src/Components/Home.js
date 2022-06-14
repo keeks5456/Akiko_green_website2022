@@ -14,7 +14,8 @@ const Home = () => {
     <>
       <Container>
       <Navbar />
-      <NameHeader>Akiko Green</NameHeader>
+      <NameHeader>Akiko Green!</NameHeader>
+      <NameHeader></NameHeader>
       <Contact />
         </Container>
         </>
