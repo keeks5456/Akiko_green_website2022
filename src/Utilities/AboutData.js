@@ -1,4 +1,4 @@
-export const AboutData = [
+export const aboutData = [
   {
     id:1,
     intro: "A San Franisco Native who discovered her love for coding during the beginning of 2020.",
