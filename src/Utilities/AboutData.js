@@ -1,4 +1,4 @@
-export const AboutData = [
+export const aboutData = [
   {
     id:1,
     intro: "A San Franisco Native who discovered her love for coding during the beginning of 2020.",
@@ -33,7 +33,8 @@ export const AboutData = [
     id:7,
     intro:" This is just the beginning of my Journey. Within 2 years I have connected with many people, went through many interviews, volunteered to help others learn how to code, learned new skills, while discovering so much about myself. I look forward to the opportunities that Software Engineering has for me.",
     happy:"Working on code at Philz coffee"
-  },{
+  },
+  {
     id: 8,
     intro:"If you've come this far, Thank you for reading and I hope you have an amazing day :). Cheers!!",
     happy:"Reading"
