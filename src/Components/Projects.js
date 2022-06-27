@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import {
   ProjectContainer,
   ProjectCard,
@@ -26,13 +27,19 @@ const Projects = () => {
 
   allProjects();
 
+  /* drag="x"
+      dragConstraints={{ left: -100, right: 100 }}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.9 }}*/
   return (
-    <>
-      <ProjectContainer>
-        <Navbar />
-        <ProjectCardContainer>{allProjects()}</ProjectCardContainer>
+    <ProjectContainer>
+    <Navbar />
+    <ProjectCardContainer>
+         
+          {allProjects()}
+    
+          </ProjectCardContainer>
       </ProjectContainer>
-    </>
   );
 };
 
