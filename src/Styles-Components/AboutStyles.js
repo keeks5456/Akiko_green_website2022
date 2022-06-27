@@ -49,8 +49,13 @@ export const ThoughtBox = styled.div`
   }
 `;
 
-export const Paragraph = styled.p`
+export const Intro = styled.p`
+font-size: 22px;
   position: relative;
   font-weight: bold;
   color: #000000;
 `;
+
+export const Happy = styled.p`
+  font-size:15px ;
+`

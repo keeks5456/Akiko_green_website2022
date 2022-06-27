@@ -4,42 +4,31 @@ import {
   AboutContainer,
   ThoughtBox,
   AboutHeader,
+  Intro,
+  Happy,
 } from "../Styles-Components/AboutStyles";
 
 import { aboutData } from "../Utilities/AboutData";
 
 const About = () => {
-  const [aboutMe, setAboutMe] = useState({
-    id: 0,
-    intro: "",
-    goodFeels: "",
-    // badFeels: "",
-  });
-
-  useEffect(() => {
-    aboutMeData();
-  }, []);
+  
 
   const aboutMeData = () => {
-
-    aboutData.forEach((data) => {
-      let id = data.id;
-      let info = data.intro;
-      let happyFeels = data.happy;
-
-      setAboutMe({
-        id: id,
-        intro: info,
-        goodFeels: happyFeels,
-      });
+    aboutData.map((data, index) => {
+      return (
+        <div key={index}>
+          <Intro>{data.intro}</Intro>
+          <Happy>{data.happy}</Happy>
+        </div>
+      );
     });
   };
 
   const handleClick = () => {
-    aboutMeData();
+     aboutMeData();
+    console.log("click")
   };
 
-  console.log(aboutMe)
   return (
     <AboutContainer>
       <Navbar />
@@ -47,11 +36,8 @@ const About = () => {
       {/*thought box here*/}
       <ThoughtBox>
         <div className="bubble">
-          <div key={aboutMe.id}>
-          <div>{aboutMe.intro}</div>
-          <div>{aboutMe.goodFeels}</div>
-          </div>
-          <button onClick={() => handleClick()}>Next</button>
+        {/**/}
+         <button onClick={() => handleClick()}>Next Info</button>
         </div>
         <div className="pointer"></div>
       </ThoughtBox>
