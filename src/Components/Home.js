@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Contact from "./Contact";
+import Projects from "./Projects";
 import { motion } from "framer-motion";
 import {
   // WelcomeBannerContainer,
@@ -14,27 +15,26 @@ const Home = () => {
     <>
       <Container>
         <Navbar />
-        {/* <NameHeader>Akiko Green!</Nah1
-h1meHeader>*/}
-        <motion.p
+        <NameHeader
+          as={motion.div}
           initial={{ y: -200, opacity: 0 }}
           animate={{
             x: "9rem",
             y: "1rem",
             opacity: 1,
             fontSize: "73px",
-         
           }}
           transition={{
             delay: 1,
             x: { type: "spring" },
             default: { duration: 2 },
-          }}>
-         Akiko Green
-        </motion.p>
+          }}
+        >
+          Akiko Green!
+        </NameHeader>
 
         <motion.p
-        initial={{ y: -200, opacity: 0 }}
+          initial={{ y: -200, opacity: 0 }}
           animate={{
             x: "9rem",
             y: "1rem",
@@ -45,11 +45,13 @@ h1meHeader>*/}
             delay: 3,
             x: { type: "spring" },
             default: { duration: 2 },
-          }}>
-        Welcome To My Portfolio
+          }}
+        >
+          Welcome To My Portfolio
         </motion.p>
         {/**<Contact /> */}
       </Container>
+      <Projects />
     </>
   );
 };
