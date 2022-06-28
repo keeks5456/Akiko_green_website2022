@@ -25,21 +25,21 @@ export const NameHeader = styled.h1`
   font-size: 59px;
   letter-spacing: 5px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange; /* The typwriter cursor */
+  /* border-right: 0.15em solid orange; The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
 
-  @keyframes typing {
+  /* @keyframes typing {
     from {
       width: 0;
     }
     to {
       width: 50%;
     }
-  }
+  } */
 
   /* The typewriter cursor effect */
-  @keyframes blink-caret {
+  /* @keyframes blink-caret {
     from,
     to {
       border-color: transparent;
@@ -47,7 +47,7 @@ export const NameHeader = styled.h1`
     50% {
       border-color: white;
     }
-  }
+  } */
 
   @media (max-width: 600px) {
     margin-top: 63px;
