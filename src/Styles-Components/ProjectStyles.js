@@ -9,23 +9,34 @@ export const ProjectContainer = styled.div`
 `;
 
 export const ProjectCardContainer = styled.div`
+ 
+  align-items: center;
   display: flex;
   justify-content: center;
   flex-flow: wrap;
   text-align: center;
+
+
 `;
 
 export const ProjectCard = styled.div`
-  height: auto;
-  padding: 10px;
+  
+  margin-top: 40px;
+  border-radius: 15px;
+  background-color: #fff;
+ 
+
 `;
 
 export const ProjectImg = styled.img`
+  position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 10em;
-  width: 17em;
+
+  
+
+ 
 `;
 
 export const CardTitle = styled.h2`
@@ -34,13 +45,12 @@ export const CardTitle = styled.h2`
 `;
 export const AnchorTag = styled.a`
   color: black;
-  margin-bottom: 1em;
-  padding: 10px;
 
   &:hover {
     color: #005f73;
   }
 `;
+
 
 export const LanguagesContainer = styled(motion.div)`
   display: flex;
