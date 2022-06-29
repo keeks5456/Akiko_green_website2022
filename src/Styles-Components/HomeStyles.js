@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
-
   margin: 0;
   background-color: #005f73;
   background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c6c07d60-1481-4dce-af4a-de3bd075f07a/dc87vm4-3083eb14-77a7-4b76-8700-f56e0d41693a.png/v1/fill/w_1600,h_898,strp/san___princess_mononoke_minimalist_wallpaper____by_goldhue_dc87vm4-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODk4IiwicGF0aCI6IlwvZlwvYzZjMDdkNjAtMTQ4MS00ZGNlLWFmNGEtZGUzYmQwNzVmMDdhXC9kYzg3dm00LTMwODNlYjE0LTc3YTctNGI3Ni04NzAwLWY1NmUwZDQxNjkzYS5wbmciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.KZtJFjLelYk5yTYAnE0P1Q4mNTgxighp_mSYO_J4rqc");
@@ -18,36 +17,11 @@ export const Container = styled.div`
 `;
 
 export const NameHeader = styled.h1`
-  margin: 0 auto auto 10em; /* Gives that scrolling effect as the typing happens */
   display: inline-block;
   font-family: "Inknut Antiqua", serif;
-  color: white;
+  color: ${(props) => props.color || "white"};
   font-size: 59px;
   letter-spacing: 5px;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  /* border-right: 0.15em solid orange; The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
-
-  /* @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 50%;
-    }
-  } */
-
-  /* The typewriter cursor effect */
-  /* @keyframes blink-caret {
-    from,
-    to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: white;
-    }
-  } */
 
   @media (max-width: 600px) {
     margin-top: 63px;
@@ -56,18 +30,6 @@ export const NameHeader = styled.h1`
   }
 `;
 
-export const WelcomeBannerContainer = styled.div`
-  text-align: center;
-  -webkit-text-stroke: 2px white;
-  font-family: "Inknut Antiqua", serif;
-  font-size: 40px;
-`;
-
-export const QuoteContainer = styled.div`
-  display: flex;
-  justify-content: end;
-`;
-
-export const Quote = styled.p`
-  font-size: 20px;
-`;
+export const WelcomeHeader = styled(NameHeader)`
+  font-size:50px ;
+`

@@ -19,7 +19,7 @@ const Projects = () => {
           whileHover={{
             scale: 1.02,
           }}
-          transition={{ duration: 0.3, yoyo: Infinity }}
+          transition={{ duration: 0.3}}
         >
           <ProjectImg src={project.image} alt={project.title} />
           <CardTitle>{project.title}</CardTitle>
