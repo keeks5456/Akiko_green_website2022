@@ -12,8 +12,7 @@ export const ProjectCardContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-flow: wrap;
-  text-align:center ;
- 
+  text-align: center;
 `;
 
 export const ProjectCard = styled.div`
@@ -25,8 +24,8 @@ export const ProjectImg = styled.img`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 13em;
-  width: 26em;
+  height: 10em;
+  width: 17em;
 `;
 
 export const CardTitle = styled.h2`
@@ -37,7 +36,6 @@ export const AnchorTag = styled.a`
   color: black;
   margin-bottom: 1em;
   padding: 10px;
-
 
   &:hover {
     color: #005f73;

@@ -16,15 +16,15 @@ const Projects = () => {
         <ProjectCard
           as={motion.div}
           key={project.id}
-          initial={{ x: "-100rem", opacity: 0 }}
+          initial={{ x: "-100", opacity: 0 }}
           animate={{ x: "0", opacity: 1 }}
           transition={{
             delay: 1,
             default: { duration: 2 },
           }}
         >
-          <ProjectImg src={project.image} alt={project.title} />
-          <CardTitle>{project.title}</CardTitle>
+        <ProjectImg src={project.image} alt={project.title} />
+        <CardTitle>{project.title}</CardTitle>
           <AnchorTag href={project.github} rel="noreferrer" target="_blank">
             Github
           </AnchorTag>

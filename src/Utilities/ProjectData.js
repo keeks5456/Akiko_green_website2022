@@ -3,6 +3,14 @@ import IMG2 from '../Images/interactive-app.jpg'
 import IMG3 from '../Images/doggyDatesImg.png'
 import IMG4 from '../Images/heidie-skin.png'
 
+//Icons
+import {FaReact} from 'react-icons/fa'
+import {DiRuby} from 'react-icons/di'
+import {SiRailway, SiRubyonrails} from 'react-icons/si'
+import {FaNodeJs} from 'react-icons/fa'
+import {SiRedux} from 'react-icons/si'
+
+
 export const projectData = [
   
   {
@@ -39,4 +47,22 @@ export const projectData = [
   },
 
 
+]
+
+export const iconArray = [
+  {
+    react: FaReact
+  },
+  {
+    ruby: DiRuby
+  },
+  {
+    redux: SiRedux
+  },
+  {
+    node: FaNodeJs
+  },
+  {
+    rails: SiRubyonrails
+  }
 ]
