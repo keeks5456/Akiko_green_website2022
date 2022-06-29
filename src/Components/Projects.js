@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { iconArray } from "../Utilities/ProjectData";
 import {
   ProjectContainer,
   ProjectCard,
@@ -7,6 +8,8 @@ import {
   ProjectCardContainer,
   CardTitle,
   AnchorTag,
+  LanguagesContainer,
+  Icons,
 } from "../Styles-Components/ProjectStyles";
 import { projectData } from "../Utilities/ProjectData";
 const Projects = () => {
@@ -23,8 +26,8 @@ const Projects = () => {
             default: { duration: 2 },
           }}
         >
-        <ProjectImg src={project.image} alt={project.title} />
-        <CardTitle>{project.title}</CardTitle>
+          <ProjectImg src={project.image} alt={project.title} />
+          <CardTitle>{project.title}</CardTitle>
           <AnchorTag href={project.github} rel="noreferrer" target="_blank">
             Github
           </AnchorTag>
@@ -38,8 +41,19 @@ const Projects = () => {
 
   allProjects();
 
+  const displayLanguages = () => {
+    return iconArray.map((icon) => (
+      <>
+        <Icons key={icon.id} color={icon.color}>
+          {icon.lang}
+        </Icons>
+      </>
+    ));
+  };
+
   return (
     <ProjectContainer as={motion.div}>
+      <LanguagesContainer>{displayLanguages()}</LanguagesContainer>
       <ProjectCardContainer>{allProjects()}</ProjectCardContainer>
     </ProjectContainer>
   );

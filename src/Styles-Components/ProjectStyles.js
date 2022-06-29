@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { motion } from "framer-motion";
 export const ProjectContainer = styled.div`
   /* max-height:100% ; */
   margin: 0;
@@ -41,3 +41,22 @@ export const AnchorTag = styled.a`
     color: #005f73;
   }
 `;
+
+export const LanguagesContainer = styled(motion.div)`
+display:flex ;
+flex-direction:row ;
+justify-content: center;
+
+`
+
+export const Icons = styled(motion.h1)`
+padding-right:45px ;
+font-size:7rem ;
+color:grey ;
+
+&:hover{
+  color:${(props) => props.color} ;
+  
+}
+
+`
