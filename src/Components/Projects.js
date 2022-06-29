@@ -44,7 +44,7 @@ const Projects = () => {
   const displayLanguages = () => {
     return iconArray.map((icon) => (
       <>
-        <Icons key={icon.id} color={icon.color}>
+        <Icons className="icon" key={icon.id} color={icon.color}>
           {icon.lang}
         </Icons>
       </>

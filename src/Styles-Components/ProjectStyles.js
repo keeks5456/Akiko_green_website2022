@@ -43,20 +43,19 @@ export const AnchorTag = styled.a`
 `;
 
 export const LanguagesContainer = styled(motion.div)`
-display:flex ;
-flex-direction:row ;
-justify-content: center;
-
-`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+`;
 
 export const Icons = styled(motion.h1)`
-padding-right:45px ;
-font-size:7rem ;
-color:grey ;
+  /* padding-right:45px ; */
+  font-size: 7rem;
+  color: grey;
+  transition: all 1s ease-out;
 
-&:hover{
-  color:${(props) => props.color} ;
-  
-}
-
-`
+  &:hover {
+    color: ${(props) => props.color};
+    transform: scale(1.1);
+  }
+`;
