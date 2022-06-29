@@ -13,13 +13,15 @@ const Projects = () => {
   const allProjects = () => {
     if (projectData) {
       return projectData?.map((project) => (
-        // <ProjectCard key={project.id}>
-        <motion.div
+        <ProjectCard
+          as={motion.div}
           key={project.id}
-          whileHover={{
-            scale: 1.02,
+          initial={{ x: "-100rem", opacity: 0 }}
+          animate={{ x: "0", opacity: 1 }}
+          transition={{
+            delay: 1,
+            default: { duration: 2 },
           }}
-          transition={{ duration: 0.3}}
         >
           <ProjectImg src={project.image} alt={project.title} />
           <CardTitle>{project.title}</CardTitle>
@@ -29,15 +31,18 @@ const Projects = () => {
           <AnchorTag href={project.demo} rel="noreferrer" target="_blank">
             Demo
           </AnchorTag>
-        </motion.div>
-        // </ProjectCard>
+        </ProjectCard>
       ));
     }
   };
 
   allProjects();
 
-  return <ProjectContainer as={motion.div} >{allProjects()}</ProjectContainer>;
+  return (
+    <ProjectContainer as={motion.div}>
+      <ProjectCardContainer>{allProjects()}</ProjectCardContainer>
+    </ProjectContainer>
+  );
 };
 
 export default Projects;

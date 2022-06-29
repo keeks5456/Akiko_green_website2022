@@ -13,6 +13,7 @@ export const ProjectCardContainer = styled.div`
   justify-content: center;
   flex-flow: wrap;
   text-align:center ;
+ 
 `;
 
 export const ProjectCard = styled.div`
