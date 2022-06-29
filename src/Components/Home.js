@@ -4,11 +4,9 @@ import Contact from "./Contact";
 import Projects from "./Projects";
 import { motion } from "framer-motion";
 import {
-  // WelcomeBannerContainer,
   Container,
   NameHeader,
-  // QuoteContainer,
-  // Quote,
+  WelcomeHeader,
 } from "../Styles-Components/HomeStyles";
 const Home = () => {
   return (
@@ -16,40 +14,38 @@ const Home = () => {
       <Container>
         <Navbar />
         <NameHeader
-          as={motion.div}
+        color="black"
+          as={motion.h1}
           initial={{ y: -200, opacity: 0 }}
           animate={{
             x: "9rem",
-            y: "1rem",
+            y: "6rem",
             opacity: 1,
-            fontSize: "73px",
+
           }}
           transition={{
             delay: 1,
-            x: { type: "spring" },
             default: { duration: 2 },
           }}
         >
           Akiko Green!
         </NameHeader>
-
-        <motion.p
-          initial={{ y: -200, opacity: 0 }}
+        <WelcomeHeader
+          color="black"
+          as={motion.h4}
+          initial={{ y: -300, opacity: 0 }}
           animate={{
-            x: "9rem",
-            y: "1rem",
+            x: "19rem",
+            y: "4rem",
             opacity: 1,
-            fontSize: "73px",
           }}
           transition={{
             delay: 3,
-            x: { type: "spring" },
             default: { duration: 2 },
           }}
         >
           Welcome To My Portfolio
-        </motion.p>
-        {/**<Contact /> */}
+        </WelcomeHeader>
       </Container>
       <Projects />
     </>
@@ -57,9 +53,3 @@ const Home = () => {
 };
 
 export default Home;
-
-///<QuoteContainer>
-//   <Quote>
-//   {/*create a quotes generator here for fun*/}
-//   </Quote>
-// </QuoteContainer>
