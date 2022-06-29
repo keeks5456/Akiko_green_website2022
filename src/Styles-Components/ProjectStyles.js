@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { motion } from "framer-motion";
 export const ProjectContainer = styled.div`
   /* max-height:100% ; */
   margin: 0;
@@ -9,23 +9,34 @@ export const ProjectContainer = styled.div`
 `;
 
 export const ProjectCardContainer = styled.div`
+ 
+  align-items: center;
   display: flex;
   justify-content: center;
   flex-flow: wrap;
-  text-align:center ;
+  text-align: center;
+
+
 `;
 
 export const ProjectCard = styled.div`
-  height: auto;
-  padding: 10px;
+  
+  margin-top: 40px;
+  border-radius: 15px;
+  background-color: #fff;
+ 
+
 `;
 
 export const ProjectImg = styled.img`
+  position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 13em;
-  width: 26em;
+
+  
+
+ 
 `;
 
 export const CardTitle = styled.h2`
@@ -34,11 +45,27 @@ export const CardTitle = styled.h2`
 `;
 export const AnchorTag = styled.a`
   color: black;
-  margin-bottom: 1em;
-  padding: 10px;
-
 
   &:hover {
     color: #005f73;
+  }
+`;
+
+
+export const LanguagesContainer = styled(motion.div)`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+`;
+
+export const Icons = styled(motion.h1)`
+  /* padding-right:45px ; */
+  font-size: 7rem;
+  color: grey;
+  transition: all 1s ease-out;
+
+  &:hover {
+    color: ${(props) => props.color};
+    transform: scale(1.1);
   }
 `;

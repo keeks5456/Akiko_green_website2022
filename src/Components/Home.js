@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "./Navbar";
 import Contact from "./Contact";
 import Projects from "./Projects";
+import About from "./About";
+import Blogs from "./Blogs";
 import { motion } from "framer-motion";
 import {
   Container,
@@ -14,14 +16,13 @@ const Home = () => {
       <Container>
         <Navbar />
         <NameHeader
-        color="black"
+          color="black"
           as={motion.h1}
           initial={{ y: -200, opacity: 0 }}
           animate={{
             x: "9rem",
             y: "6rem",
             opacity: 1,
-
           }}
           transition={{
             delay: 1,
@@ -47,7 +48,10 @@ const Home = () => {
           Welcome To My Portfolio
         </WelcomeHeader>
       </Container>
+      {/*<About /> */}
       <Projects />
+       {/*<Blogs /> */}
+      {/*<Contact /> */}
     </>
   );
 };
