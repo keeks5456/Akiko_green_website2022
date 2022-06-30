@@ -8,7 +8,6 @@ import {
   ProjectCardContainer,
   CardTitle,
   AnchorTag,
-  ContentShow,
   LanguagesContainer,
   Icons,
 } from "../Styles-Components/ProjectStyles";
@@ -18,7 +17,7 @@ const Projects = () => {
     if (projectData) {
       return projectData?.map((project) => (
         <ProjectCard
-        className="card"
+          className="card"
           as={motion.div}
           key={project.id}
           initial={{ x: "-100", opacity: 0 }}
@@ -28,16 +27,20 @@ const Projects = () => {
             default: { duration: 2 },
           }}
         >
-        <ProjectImg className="image" src={project.image} alt={project.title}></ProjectImg>
-        
-        <div className="content">
-           <CardTitle>{project.title}</CardTitle>
+          <ProjectImg
+            className="image"
+            src={project.image}
+            alt={project.title}
+          ></ProjectImg>
+
+          <div className="content">
+            <CardTitle>{project.title}</CardTitle>
             <AnchorTag href={project.github} rel="noreferrer" target="_blank">
               Github
             </AnchorTag>
             <AnchorTag href={project.demo} rel="noreferrer" target="_blank">
               Demo
-        </AnchorTag> 
+            </AnchorTag>
           </div>
         </ProjectCard>
       ));
@@ -59,7 +62,9 @@ const Projects = () => {
   return (
     <ProjectContainer as={motion.div}>
       <LanguagesContainer>{displayLanguages()}</LanguagesContainer>
-      <ProjectCardContainer className="container">{allProjects()}</ProjectCardContainer>
+      <ProjectCardContainer className="container">
+        {allProjects()}
+      </ProjectCardContainer>
     </ProjectContainer>
   );
 };

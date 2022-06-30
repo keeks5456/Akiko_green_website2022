@@ -48,7 +48,7 @@ const Home = () => {
           Welcome To My Portfolio
         </WelcomeHeader>
       </Container>
-      {/*<About /> */}
+      {<About /> }
       <Projects />
        {/*<Blogs /> */}
       {/*<Contact /> */}
