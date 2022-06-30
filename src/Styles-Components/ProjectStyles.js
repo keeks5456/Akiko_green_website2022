@@ -4,7 +4,7 @@ export const ProjectContainer = styled.div`
   /* max-height:100% ; */
   margin: 0;
   height: 100vh;
-  background-image: url("https://i.pinimg.com/originals/cd/3e/fa/cd3efa18f56b905bb1dace5f63d4df19.jpg");
+  background-color: #28282b;
   background-size: cover;
 `;
 
