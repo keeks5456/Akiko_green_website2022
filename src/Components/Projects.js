@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"; 
 import { motion } from "framer-motion";
 import { iconArray } from "../Utilities/ProjectData";
 import {
@@ -11,11 +11,12 @@ import {
   LanguagesContainer,
   Icons,
 } from "../Styles-Components/ProjectStyles";
+
 import { projectData } from "../Utilities/ProjectData";
 const Projects = () => {
   const allProjects = () => {
     if (projectData) {
-      return projectData?.map((project) => (
+       return projectData.map((project) => (
         <ProjectCard
           className="card"
           as={motion.div}

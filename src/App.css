@@ -10,10 +10,13 @@
   color: black;
   text-decoration: none;
   padding-right: 30px;
+	font-size: larger;
+	
 }
 .main-nav:hover{
   color: white;
   transition: all 1s ease-in-out;
+	transform:scale(1.1) ;
 }
 .active{
   color: white;

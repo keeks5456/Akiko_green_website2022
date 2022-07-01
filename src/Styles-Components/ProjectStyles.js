@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export const ProjectContainer = styled.div`
   /* max-height:100% ; */
   margin: 0;
-  height: 100vh;
+  height: 100%;
   background-color: #28282b;
   background-size: cover;
 `;
@@ -54,5 +54,6 @@ export const Icons = styled(motion.h1)`
 
   &:hover {
     color: ${(props) => props.color};
+   transform:scale(1.1) ;
   }
 `;
