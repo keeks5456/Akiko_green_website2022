@@ -1,3 +1,4 @@
+import React from "react"; 
 import IMG1 from "../Images/qpq.gif";
 import IMG2 from "../Images/interactive-app.jpg";
 import IMG3 from "../Images/doggyDatesImg.png";
