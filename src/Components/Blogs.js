@@ -66,7 +66,7 @@ const Blogs = ({ blogs, profile }) => {
   console.log(blogs.items);
   return (
     <>
-    <BlogContainer>
+    <BlogContainer id="blogs">
     <Navbar />
         {blogs.isLoading ? "Loading..." : allBlogs()}
       </BlogContainer>

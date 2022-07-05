@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { HashLink as NavLink } from "react-router-hash-link";
 import { motion } from "framer-motion";
 //styles
 import { NavContainer } from "../Styles-Components/NavbarStyles";
@@ -22,25 +22,28 @@ const Navbar = () => {
     >
       <NavContainer>
         <NavLink
-          to="/"
+          to="#home"
+          smooth
           className={({ isActive }) => (isActive ? "active" : "main-nav")}
         >
           Home
         </NavLink>
         <NavLink
-          to="/about"
+          to="#about" smooth
           className={({ isActive }) => (isActive ? "active" : "main-nav")}
         >
           About
         </NavLink>
         <NavLink
-          to="/projects"
+          to="#projects"
+          smooth
           className={({ isActive }) => (isActive ? "active" : "main-nav")}
         >
           Projects
         </NavLink>
         <NavLink
-          to="/blogs"
+          to="#blogs"
+          smooth
           className={({ isActive }) => (isActive ? "active" : "main-nav")}
         >
           Blogs
