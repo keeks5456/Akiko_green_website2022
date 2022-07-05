@@ -12,7 +12,7 @@ import { aboutData } from "../Utilities/AboutData";
 
 const About = () => {
   return (
-    <AboutContainer>
+    <AboutContainer id="about">
       <ImageContainer>
         <ProfileImage></ProfileImage>
         <ProfileImage></ProfileImage>

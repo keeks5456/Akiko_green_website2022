@@ -13,7 +13,7 @@ import {
 const Home = () => {
   return (
     <>
-      <Container>
+      <Container id="home">
        
         <NameHeader
           // color="black"

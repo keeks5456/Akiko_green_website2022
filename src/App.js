@@ -55,13 +55,13 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        {/*   <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route
           path="/blogs"
           element={<Blogs blogs={blogs} profile={profile} />}
         />
-        <Route path="/contacts" element={<Contact />} />
+  <Route path="/contacts" element={<Contact />} /> */}
       </Routes>
     </>
   );

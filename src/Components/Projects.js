@@ -61,7 +61,7 @@ const Projects = () => {
   };
 
   return (
-    <ProjectContainer as={motion.div}>
+    <ProjectContainer as={motion.div} id="projects">
       <LanguagesContainer>{displayLanguages()}</LanguagesContainer>
       <ProjectCardContainer className="container">
         {allProjects()}
