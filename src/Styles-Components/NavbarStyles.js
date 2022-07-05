@@ -7,6 +7,8 @@ export const NavContainer = styled.div`
   /* flex-direction: ${(props) =>
     props.direction === true ? "column" : "row"}; */
   justify-content: space-around;
+  position: relative;
+  top: 500px;
 
 `;
 
