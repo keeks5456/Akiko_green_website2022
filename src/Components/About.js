@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import Navbar from "./Navbar";
+import React from "react";
 import {
   AboutContainer,
   ImageContainer,
@@ -7,8 +6,6 @@ import {
   AboutInfoContainer,
   AboutInfo,
 } from "../Styles-Components/AboutStyles";
-
-import { aboutData } from "../Utilities/AboutData";
 
 const About = () => {
   return (
@@ -28,14 +25,6 @@ const About = () => {
           </AboutInfo>
         </AboutInfoContainer>
       </ImageContainer>
-
-      {/* <ThoughtBox>
-        <div className="bubble">
-       
-         <button onClick={() => handleClick()}>Next Info</button>
-        </div>
-        <div className="pointer"></div>
-      </ThoughtBox>*/}
     </AboutContainer>
   );
 };

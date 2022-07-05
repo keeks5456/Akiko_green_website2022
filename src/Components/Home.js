@@ -11,7 +11,7 @@ import {
   WelcomeHeader,
 
 } from "../Styles-Components/HomeStyles";
-const Home = () => {
+const Home = ({ blogs, profile}) => {
 
 
 
@@ -49,9 +49,9 @@ const Home = () => {
       
         <Navbar />
       </Container>
-      {<About />}
+      <About />
       <Projects />
-      {/*<Blogs /> */}
+      <Blogs blogs={blogs} profile={profile}/>
       {/*<Contact /> */}
     </>
   );

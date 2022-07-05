@@ -24,7 +24,7 @@ const Blogs = ({ blogs, profile }) => {
   }
 
   function allBlogs() {
-    if (blogs.items) {
+    if(blogs.items) {
       console.log(blogs.items);
       return (
         blogs.items &&

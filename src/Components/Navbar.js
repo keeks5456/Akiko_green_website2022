@@ -4,22 +4,8 @@ import { motion } from "framer-motion";
 //styles
 import { NavContainer } from "../Styles-Components/NavbarStyles";
 const Navbar = () => {
-  // const [toggleStyles, setToggleStyles] = useState(false)
-
-  // const styledComponentToggle = () =>{
-  //   setToggleStyles(true)
-  // }
-
-  const variants = {
-    hidden: { opacity: 0.3 },
-    visible: { opacity: 1 },
-  };
-
   return (
-    <motion.div
-      animate={{ scale: 1}}
-      transition={{ duration: 0.5 }}
-    >
+    <motion.div animate={{ scale: 1 }} transition={{ duration: 0.5 }}>
       <NavContainer>
         <NavLink
           to="#home"
@@ -29,7 +15,8 @@ const Navbar = () => {
           Home
         </NavLink>
         <NavLink
-          to="#about" smooth
+          to="#about"
+          smooth
           className={({ isActive }) => (isActive ? "active" : "main-nav")}
         >
           About
@@ -48,7 +35,6 @@ const Navbar = () => {
         >
           Blogs
         </NavLink>
-    
       </NavContainer>
     </motion.div>
   );

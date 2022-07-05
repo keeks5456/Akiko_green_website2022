@@ -2,12 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { css } from "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
-import About from "./Components/About";
-import Projects from "./Components/Projects";
-import Blogs from "./Components/Blogs";
-import Contact from "./Components/Contact";
+
 
 function App() {
   const mediumURL =
@@ -54,14 +50,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
-        {/*   <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route
-          path="/blogs"
-          element={<Blogs blogs={blogs} profile={profile} />}
-        />
-  <Route path="/contacts" element={<Contact />} /> */}
+        <Route path="/" element={<Home blogs={blogs} profile={profile} />} />
       </Routes>
     </>
   );
