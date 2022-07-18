@@ -77,3 +77,29 @@ export const iconArray = [
     color: "red"
   },
 ];
+
+
+export const socialIcons = [
+  {
+    id:'instagram',
+    social: "blank",
+    color: "blue",
+    
+  },
+  {
+    id:'twitter',
+    social:"blank",
+    color: "purple"
+  },
+  {
+    id:'github',
+    social: "blank",
+    color: "green"
+  },
+  {
+    id:'medium',
+    social: "blank",
+    color: "red"
+  },
+
+]

@@ -27,8 +27,8 @@ export const ImageContainer = styled.div`
 
 export const ProfileImage = styled(motion.div)`
   background-color: darkgray;
-  width: 300px;
-  height: 350px;
+  width:  437px;;
+  height: 357px;
   border-radius: 20px;
   border: 2px solid #7df9ff;
 `;
@@ -39,7 +39,7 @@ export const AboutInfoContainer = styled.div`
   position: relative;
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
     linear-gradient(101deg, #78e4ff, #ff48fa);
-  margin-top: 10px;
+  margin-top: 171px;
 `;
 
 export const AboutInfo = styled.p`
