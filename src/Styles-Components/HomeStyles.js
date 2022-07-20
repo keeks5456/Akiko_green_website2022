@@ -9,8 +9,8 @@ export const Container = styled.div`
   height: 100%;
   /* height: 100vh; */
   margin: 0;
-  background: whitesmoke;
-
+  background-color: #28282b;
+  
   @media (max-width: 600px) {
   }
 `;
