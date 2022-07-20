@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 export const ProjectContainer = styled.div`
-  /* max-height:100% ; */
   margin: 0;
   height: 100%;
   background-color: #28282b;

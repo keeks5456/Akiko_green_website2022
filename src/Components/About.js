@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import Navbar from "./Navbar";
+import React from "react";
 import {
   AboutContainer,
   ImageContainer,
@@ -7,8 +6,6 @@ import {
   AboutInfoContainer,
   AboutInfo,
 } from "../Styles-Components/AboutStyles";
-
-import { aboutData } from "../Utilities/AboutData";
 
 const About = () => {
   return (
@@ -24,18 +21,13 @@ const About = () => {
             From Solving problems while bouldering
             <br />
             To solving errors in code.
-            <br />A software Engineer powered by Philz Tea & Coffee.
+            <br />
+            A software Engineer powered by Philz Tea & Coffee.
+            <br />
+            On my down time, I love to read, go indoor bouldering, explore recipes on youtube or dog sit :)
           </AboutInfo>
         </AboutInfoContainer>
       </ImageContainer>
-
-      {/* <ThoughtBox>
-        <div className="bubble">
-       
-         <button onClick={() => handleClick()}>Next Info</button>
-        </div>
-        <div className="pointer"></div>
-      </ThoughtBox>*/}
     </AboutContainer>
   );
 };

@@ -1,6 +1,7 @@
 body {
-  margin: 0;
-
+  margin: 40px;
+  /* border: 10px solid black; */
+  background-color: #111;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

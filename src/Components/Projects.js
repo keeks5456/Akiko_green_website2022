@@ -1,6 +1,7 @@
 import React from "react"; 
 import { motion } from "framer-motion";
 import { iconArray } from "../Utilities/ProjectData";
+
 import {
   ProjectContainer,
   ProjectCard,

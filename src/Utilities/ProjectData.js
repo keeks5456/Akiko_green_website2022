@@ -11,7 +11,10 @@ import { SiRubyonrails } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { SiRedux } from "react-icons/si";
 
-
+//Social Media Icons
+import {AiFillTwitterCircle} from 'react-icons/ai'
+import {FaGithubAlt} from 'react-icons/fa'
+import {FaMediumM} from 'react-icons/fa'
 
 export const projectData = [
   {
@@ -47,8 +50,6 @@ export const projectData = [
   },
 ];
 
-
-
 export const iconArray = [
   {
     id:'React',
@@ -77,3 +78,25 @@ export const iconArray = [
     color: "red"
   },
 ];
+
+export const socialIcons = [
+  {
+    id:'twitter',
+    social:<AiFillTwitterCircle />,
+    color: "lightblue",
+    link:"https://twitter.com/akikoDotJS"
+  },
+  {
+    id:'github',
+    social: <FaGithubAlt />,
+    color: "black",
+    link:"https://github.com/keeks5456"
+  },
+  {
+    id:'medium',
+    social: <FaMediumM />,
+    color: "gold",
+    link:"https://medium.com/@agreen17"
+  },
+
+]
