@@ -1,7 +1,8 @@
 import React from "react";
 import Navbar from "./Navbar";
-import Contact from "./Contact";
-import Projects from "./Projects";
+// import Contact from "./Contact";
+// import Projects from "./Projects";
+import Projects2 from "./Projects2";
 import About from "./About";
 import Blogs from "./Blogs";
 import { motion } from "framer-motion";
@@ -75,7 +76,8 @@ const Home = ({ blogs, profile }) => {
         */ }
       </Container>
       <About />
-      <Projects />
+      <Projects2 />
+      {/*<Projects /> */}
       <Blogs blogs={blogs} profile={profile} />
       {/*<Contact /> */}
     </>
