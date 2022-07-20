@@ -12,4 +12,6 @@ export const NavContainer = styled.div`
 
 `;
 
+
+
 //do a z index fixed positioning

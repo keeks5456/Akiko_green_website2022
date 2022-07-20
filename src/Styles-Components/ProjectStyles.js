@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 export const ProjectContainer = styled.div`
   margin: 0;
-  height: 100vh;
+  height: 100%;
   background-color: #28282b;
   background-size: cover;
 `;

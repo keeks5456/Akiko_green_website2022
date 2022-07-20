@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import akikoFace from "../Images/akikoFace.jpg";
+import { socialIcons } from "../Utilities/ProjectData";
 
 export const Container = styled.div`
   display: flex;
   flex-flow: column wrap;
-  /* justify-content: space-between; */
-  /* height: 100%; */
-  height: 100vh;
+  height: 100%;
+  /* height: 100vh; */
   margin: 0;
   background: whitesmoke;
 
@@ -16,6 +16,7 @@ export const Container = styled.div`
 `;
 
 export const NameHeader = styled(motion.h1)`
+  width: max-content;
   display: inline-block;
   font-family: "Trispace", sans-serif;
   /* text-shadow: 5px -1px 2px #fca311; */
@@ -54,9 +55,20 @@ export const ProfileFaceImg = styled(motion.img)`
 export const SocialsContainer = styled(motion.div)`
   display: flex;
   flex-flow: row;
-  padding-right:20px ;
+  justify-content: flex-end;
+  padding-right: 20px;
+  position: absolute;
+  top: 68%;
+  left: 54%;
 `;
 
+
 export const SocalIcons = styled(motion.div)`
-  
-`
+  font-size: 1rem;
+  color: grey;
+  display: flex;
+
+  &:hover {
+    color: ${(props) => props.color};
+  }
+`;

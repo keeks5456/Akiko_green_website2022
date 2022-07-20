@@ -1,11 +1,13 @@
 import React from "react";
-// import { akikoFace } from "../Images/akikoface.jpg";
 import Navbar from "./Navbar";
 import Contact from "./Contact";
 import Projects from "./Projects";
 import About from "./About";
 import Blogs from "./Blogs";
 import { motion } from "framer-motion";
+
+//socials icons
+import { socialIcons } from "../Utilities/ProjectData";
 
 import {
   Container,
@@ -16,6 +18,16 @@ import {
   SocalIcons,
 } from "../Styles-Components/HomeStyles";
 const Home = ({ blogs, profile }) => {
+  const displayIcons = () => {
+    return socialIcons.map((icon) => (
+      <>
+        <SocalIcons className="icon" key={icon.id} color={icon.color}>
+          {icon.social}
+        </SocalIcons>
+      </>
+    ));
+  };
+
   return (
     <>
       <Container id="home">
@@ -25,41 +37,42 @@ const Home = ({ blogs, profile }) => {
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
         ></ProfileFaceImg>
-        <div className="home-container">
-          <NameHeader
-            color="black"
-            initial={{ opacity: 0 }}
-            animate={{
-              x: "28rem",
-              y: "-26rem",
-              opacity: 1,
-            }}
-            transition={{ type: "spring", stiffness: 100, delay: 1.5 }}
-          >
-            Akiko Green
-          </NameHeader>
-          <WelcomeHeader
-            color="black"
-            as={motion.h4}
-            initial={{ opacity: 0 }}
-            animate={{
-              x: "3rem",
-              y: "-21rem",
-              opacity: 1,
-            }}
-            transition={{
-              type: "spring",
-              stiffness: 100,
-              delay: 2,
-            }}
-          >
-            Full-Stack Developer
-          </WelcomeHeader>
-        </div>{" "}
-        <SocialsContainer>
-          <div>Sneak a peak at my:</div>
-          <SocalIcons></SocalIcons>
-        </SocialsContainer>
+        <NameHeader
+          color="black"
+          initial={{ opacity: 0 }}
+          animate={{
+            x: "28rem",
+            y: "-26rem",
+            opacity: 1,
+          }}
+          transition={{ type: "spring", stiffness: 100, delay: 1.5 }}
+        >
+          Akiko Green
+        </NameHeader>
+        <WelcomeHeader
+          color="black"
+          as={motion.h4}
+          initial={{ opacity: 0 }}
+          animate={{
+            x: "31rem",
+            y: "-25rem",
+            opacity: 1,
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 100,
+            delay: 2,
+          }}
+        >
+          Full-Stack Developer
+        </WelcomeHeader>
+
+        {/*
+          <SocialsContainer>
+            <div>Sneak a peak at my:</div>
+            {displayIcons()}
+          </SocialsContainer>
+        */ }
       </Container>
       <About />
       <Projects />

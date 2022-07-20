@@ -21,7 +21,10 @@ const About = () => {
             From Solving problems while bouldering
             <br />
             To solving errors in code.
-            <br />A software Engineer powered by Philz Tea & Coffee.
+            <br />
+            A software Engineer powered by Philz Tea & Coffee.
+            <br />
+            On my down time, I love to read, go indoor bouldering, explore recipes on youtube or dog sit :)
           </AboutInfo>
         </AboutInfoContainer>
       </ImageContainer>
