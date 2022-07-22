@@ -8,6 +8,7 @@ const Navbar = () => {
     <motion.div animate={{ scale: 1 }} transition={{ duration: 0.5 }}>
       <NavContainer>
         <NavLink
+        
           to="#home"
           smooth
           className={({ isActive }) => (isActive ? "active" : "main-nav")}

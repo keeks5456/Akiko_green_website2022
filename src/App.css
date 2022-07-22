@@ -9,21 +9,21 @@
   box-sizing: border-box;
 }
 
-
 a {
   color: black;
   text-decoration: none;
-  padding-right: 30px;
-  font-size: 35px;
+  font-size: 14px;
+  padding-right: 20px;
 }
+
 a:hover {
-  color: #fca311;
-  transition: all 1s ease-in-out;
-  transform: scale(1.5);
+  color: darkgrey;
+  text-decoration: underline;
 }
+
 .active {
   color: white;
-  padding-right: 30px;
+  padding-right: 25px;
 }
 
 .active:hover {
@@ -39,13 +39,18 @@ a:hover {
 input::-webkit-input-placeholder {
   color: black;
 }
-/* input:focus::-webkit-input-placeholder {
-	color: whitesmoke;
-} */
+
 
 textarea::-webkit-input-placeholder {
   color: black;
 }
-/* textarea:focus::-webkit-input-placeholder {
-	color: whitesmoke;
-} */
+
+
+.cardText{
+  font-family: 'Comfortaa', cursive;
+
+}
+
+.postTitle{
+  /* padding-right: 20px; */
+}

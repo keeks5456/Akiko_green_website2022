@@ -5,7 +5,11 @@ import {
   BlogImg,
   AnchorTag,
   CardTitle,
+  ArticleLink,
+  ArticleP,
 } from "../Styles-Components/BlogsStyles";
+
+import { AiOutlineArrowRight } from "react-icons/ai";
 const Blogs = ({ blogs, profile }) => {
   function toText(node) {
     //move this to utilities later and import from there
@@ -28,35 +32,28 @@ const Blogs = ({ blogs, profile }) => {
       return (
         blogs.items &&
         blogs.items.map((post, index) => (
-          <BlogCard key={index}>
+          <BlogCard key={index} id="blogs">
             <div className="card-image">
-              <div className="authorImg">
-                <a
-                  href={profile.profileUrl}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  aria-hidden="true"
-                ></a>
-              </div>
+              {<BlogImg src={post.thumbnail} alt="thumbnail"></BlogImg>}{" "}
             </div>
             <div className="card-body">
               <CardTitle>
-                <AnchorTag
-                  href={post.link}
-                  className="postTitle"
-                  rel="noreferrer"
-                  target="_blank"
-                >
+                <div className="postTitle" rel="noreferrer" target="_blank">
                   {shortText(post.title, 0, 80)}
-                </AnchorTag>
+                </div>
               </CardTitle>
-              {/*<BlogImg src={post.thumbnail} alt="thumbnail"></BlogImg> */}{" "}
               {
-                <p className="cardText">
+                <ArticleP className="cardText">
                   {shortText(toText(post.description), 0, 150)}
-                </p>
+                </ArticleP>
               }
             </div>
+            <ArticleLink>
+              Read Article{" "}
+              <span>
+                <AiOutlineArrowRight />
+              </span>{" "}
+            </ArticleLink>
           </BlogCard>
         ))
       );
@@ -67,7 +64,7 @@ const Blogs = ({ blogs, profile }) => {
   console.log(blogs.items);
   return (
     <>
-      <BlogContainer id="blogs">
+      <BlogContainer>
         {blogs.isLoading ? "Loading..." : allBlogs()}
       </BlogContainer>
     </>
@@ -75,4 +72,4 @@ const Blogs = ({ blogs, profile }) => {
 };
 
 export default Blogs;
-//holds the medium blogs and fetches the data
+

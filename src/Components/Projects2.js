@@ -1,6 +1,7 @@
 import React from "react";
 import { projectData } from "../Utilities/ProjectData";
-// import { motion } from "framer-motion";
+import { iconArray } from "../Utilities/ProjectData";
+import { motion } from "framer-motion";
 
 //styles
 import {
@@ -10,6 +11,8 @@ import {
   ProjectImg,
   CardTitle,
   AnchorTag,
+  LanguagesContainer,
+  Icons,
 } from "../Styles-Components/Project2Styles";
 const Projects2 = () => {
   const allProjects = () => {
@@ -32,9 +35,20 @@ const Projects2 = () => {
 
   allProjects();
 
+  const displayLanguages = () => {
+    return iconArray.map((icon) => (
+      <>
+        <Icons className="icon" key={icon.id} color={icon.color}>
+          {icon.lang}
+        </Icons>
+      </>
+    ));
+  };
+
   return (
-    <ProjectContainer>
-      <ProjectCardContainer>{allProjects()}</ProjectCardContainer>
+    <ProjectContainer as={motion.div}>
+    <LanguagesContainer  id="projects">{displayLanguages()}</LanguagesContainer>
+    <ProjectCardContainer>{allProjects()}</ProjectCardContainer>
     </ProjectContainer>
   );
 };
