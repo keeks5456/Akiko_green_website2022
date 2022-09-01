@@ -39,7 +39,7 @@ const Blogs = ({ blogs, profile }) => {
             <div className="card-body">
               <CardTitle>
                 <div className="postTitle" rel="noreferrer" target="_blank">
-                  {shortText(post.title, 0, 80)}
+                  {shortText(post.title, 0, 80)} 
                 </div>
               </CardTitle>
               {
@@ -48,12 +48,6 @@ const Blogs = ({ blogs, profile }) => {
                 </ArticleP>
               }
             </div>
-            <ArticleLink>
-              Read Article{" "}
-              <span>
-                <AiOutlineArrowRight />
-              </span>{" "}
-            </ArticleLink>
           </BlogCard>
         ))
       );

@@ -9,13 +9,15 @@ export const BlogContainer = styled.div`
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 12px;
   grid-row-gap: 14px;
+  padding:30px 14px 14px 14px;
+
 `;
 
 export const BlogCard = styled.div`
-  background: white;
+  background: darkgray;
   text-align: center;
   height: 100%;
-
+  padding: 10px;
 `;
 
 export const BlogImg = styled.img`
@@ -25,6 +27,8 @@ export const BlogImg = styled.img`
 
 export const CardTitle = styled.h4`
   padding-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif ;
+  padding-top:14px;
 `;
 
 
@@ -32,6 +36,8 @@ export const CardTitle = styled.h4`
 export const ArticleP = styled.p`
   font-size: 13px;
   padding-bottom:10px ;
+  font-family: Arial, Helvetica, sans-serif ;
+
 `
 
 export const ArticleLink = styled(motion.div)`
