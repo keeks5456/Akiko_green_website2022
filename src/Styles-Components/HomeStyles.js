@@ -9,8 +9,8 @@ export const Container = styled.div`
   height: 100%;
   /* height: 100vh; */
   margin: 0;
-  background: whitesmoke;
-
+  background-color: #28282b;
+  
   @media (max-width: 600px) {
   }
 `;
@@ -51,6 +51,29 @@ export const ProfileFaceImg = styled(motion.img)`
   box-shadow: 10px 10px 10px black;
   opacity: 0.55;
 `;
+
+export const AboutInfoContainer = styled.div`
+  /* max-width: 550px; */
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  padding-right: 20px;
+  position: absolute;
+  top: 68%;
+  left: 54%;
+
+  max-width: auto;
+  padding: 3px;
+
+
+`;
+
+export const AboutInfo = styled.p`
+  color: white;
+  padding: 2rem;
+  text-align:center ;
+`;
+
 
 export const SocialsContainer = styled(motion.div)`
   display: flex;

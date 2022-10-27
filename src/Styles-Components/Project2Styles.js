@@ -1,24 +1,25 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+
 export const ProjectContainer = styled.div`
-  margin: 0;
+padding-bottom: 5em;
   height: 100%;
   background-color: #28282b;
-  background-size: cover;
 `;
 
 export const ProjectCardContainer = styled.div`
-  align-items: center;
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
-  flex-flow: wrap;
-  text-align: center;
 `;
 
 export const ProjectCard = styled.div`
-  margin-top: 40px;
-  border-radius: 15px;
-  background-color: #fff;
+    transition: all 1s ease-out;
+
+  &:hover{
+
+    transform: scale(0.95);
+  }
 `;
 
 export const ProjectImg = styled.img`
@@ -26,6 +27,8 @@ export const ProjectImg = styled.img`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 10rem;
+  width: 15rem;
 `;
 
 export const CardTitle = styled.h2`
@@ -34,10 +37,6 @@ export const CardTitle = styled.h2`
 `;
 export const AnchorTag = styled.a`
   color: black;
-  padding: 10px;
-  &:hover {
-    color: #005f73;
-  }
 `;
 
 export const LanguagesContainer = styled(motion.div)`
@@ -47,7 +46,7 @@ export const LanguagesContainer = styled(motion.div)`
 `;
 
 export const Icons = styled(motion.h1)`
-  font-size: 7rem;
+  font-size: 3rem;
   color: grey;
   transition: all 1s ease-out;
 

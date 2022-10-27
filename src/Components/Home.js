@@ -1,8 +1,9 @@
 import React from "react";
 import Navbar from "./Navbar";
-import Contact from "./Contact";
-import Projects from "./Projects";
-import About from "./About";
+// import Contact from "./Contact";
+// import Projects from "./Projects";
+import Projects2 from "./Projects2";
+// import About from "./About";
 import Blogs from "./Blogs";
 import { motion } from "framer-motion";
 
@@ -14,6 +15,8 @@ import {
   NameHeader,
   WelcomeHeader,
   ProfileFaceImg,
+  AboutInfo,
+  AboutInfoContainer,
   SocialsContainer,
   SocalIcons,
 } from "../Styles-Components/HomeStyles";
@@ -67,15 +70,26 @@ const Home = ({ blogs, profile }) => {
           Full-Stack Developer
         </WelcomeHeader>
 
-        {/*
+        <AboutInfoContainer>
+          <AboutInfo>
+            A San Francisco State University psychology major, working as a
+            barista local cafes. To a hungry, passionate, and determine Full
+            Stacks Engineer. I told myself years ago that working in tech were
+            for the smart, successful and rich individuals. I thought psychology
+            was my true passion. Two years later, molding myself to be a POC woman in tech,
+             ready to take on all the cchallenges that come my way. 
+          </AboutInfo>
+        </AboutInfoContainer>
+
+
           <SocialsContainer>
             <div>Sneak a peak at my:</div>
             {displayIcons()}
           </SocialsContainer>
-        */ }
       </Container>
-      <About />
-      <Projects />
+
+      <Projects2 />
+      {/*<Projects /> */}
       <Blogs blogs={blogs} profile={profile} />
       {/*<Contact /> */}
     </>

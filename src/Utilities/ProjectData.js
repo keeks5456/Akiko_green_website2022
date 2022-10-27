@@ -3,6 +3,7 @@ import IMG1 from "../Images/qpq.gif";
 import IMG2 from "../Images/interactive-app.jpg";
 import IMG3 from "../Images/doggyDatesImg.png";
 import IMG4 from "../Images/heidie-skin.png";
+import IMG5 from "../Images/front-page-food.png"
 
 //Icons
 import { FaReact } from "react-icons/fa";
@@ -42,12 +43,21 @@ export const projectData = [
     demo: "https://youtu.be/egtJ2lOPFkM",
   },
   {
+    //heidie
     id: 4,
     image: IMG4,
     title: "Heidie-Skin16",
     github: "https://github.com/mgdeveloper45/Heidi-Skin16",
     demo: "",
   },
+  {
+    //recipes
+    id:5,
+    image:IMG5,
+    title: "Recipes With Frank",
+    github: "https://github.com/alphaworks-react-team/RecipesWithFrank",
+    demo: "https://recipes-22.herokuapp.com/"
+  }
 ];
 
 export const iconArray = [

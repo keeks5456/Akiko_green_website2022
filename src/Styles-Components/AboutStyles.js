@@ -35,17 +35,3 @@ export const ProfileImage = styled(motion.div)`
   margin-bottom:20px;
 `;
 
-export const AboutInfoContainer = styled.div`
-  /* max-width: 550px; */
-  max-width: auto;
-  padding: 3px;
-  position: relative;
-
-`;
-
-export const AboutInfo = styled.p`
-
-  color: white;
-  padding: 2rem;
-  text-align:center ;
-`;

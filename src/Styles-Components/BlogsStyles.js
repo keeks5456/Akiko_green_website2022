@@ -1,62 +1,47 @@
 import styled from "styled-components";
-
+import { motion } from "framer-motion";
 export const BlogContainer = styled.div`
-  box-sizing: content-box;
-  width: auto;
+  max-width: 100%;
   height: 100%;
-  margin: 0;
-  display: flex;
-  flex-flow: wrap;
-  align-items: flex-start;
-  justify-content: space-around;
   background-color: #28282b;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 12px;
+  grid-row-gap: 14px;
+  padding:30px 14px 14px 14px;
 
 `;
 
 export const BlogCard = styled.div`
-  width: 100%;
-  padding-bottom: 0.5em;
-  /* important */
-  min-height: 100%;
-
-  display: flex;
-  border-bottom: 1px solid #e5e5e5;
-  margin: 10px 10px 10px 0;
-  align-items: center;
-  transition: 1s ease-out;
-
-
-  &:hover {
-    transform: scale(1.1);
-    /* transition: 1s ease-in;
-    box-shadow: 10px 10px 5px darkgray; */
-  }
-
-  &:hover:after {
-    opacity: 1;
-  }
+  background: darkgray;
+  text-align: center;
+  height: 100%;
+  padding: 10px;
 `;
 
 export const BlogImg = styled.img`
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 10em;
-  width: 16em;
+  width: 353px;
+  height: 170px;
 `;
 
-export const CardTitle = styled.h3`
-  padding-bottom: 1em;
-  font-family: "Leckerli One", cursive;
+export const CardTitle = styled.h4`
+  padding-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif ;
+  padding-top:14px;
 `;
 
-export const AnchorTag = styled.a`
-  color: white;
-  margin-bottom: 1em;
-  transition: all 1s ease-out;
 
-  &:hover {
-    transition: all 1s ease-in-out;
-    color: #005f73;
-  }
+
+export const ArticleP = styled.p`
+  font-size: 13px;
+  padding-bottom:10px ;
+  font-family: Arial, Helvetica, sans-serif ;
+
+`
+
+export const ArticleLink = styled(motion.div)`
+  display: flex;
+  justify-content: space-between;
+  
 `;
