@@ -5,24 +5,25 @@ import { socialIcons } from "../Utilities/ProjectData";
 
 export const Container = styled.div`
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
   height: 100%;
   /* height: 100vh; */
   margin: 0;
   background-color: #28282b;
-  
+
   @media (max-width: 600px) {
   }
 `;
 
 export const NameHeader = styled(motion.h1)`
-  width: max-content;
-  display: inline-block;
   font-family: "Trispace", sans-serif;
   /* text-shadow: 5px -1px 2px #fca311; */
   color: black;
-  font-size: 80px;
-  letter-spacing: -3px;
+  text-align: end;
+  position: absolute;
+  top: 31%;
+  left: 30%;
+  width: fit-content;
 
   /* @media (max-width: 600px) {
     margin-top: 63px;
@@ -32,7 +33,8 @@ export const NameHeader = styled(motion.h1)`
 `;
 
 export const WelcomeHeader = styled(NameHeader)`
-  font-size: 50px;
+  top: 41%;
+  left: 30%;
 `;
 
 export const ProfileFaceImg = styled(motion.img)`
@@ -42,9 +44,7 @@ export const ProfileFaceImg = styled(motion.img)`
   background-repeat: no-repeat, repeat;
   background-position: center;
   background-size: cover;
-  position: relative;
-  top: 6%;
-  left: 8%;
+
   border-radius: 10px;
   border: transparent;
   background-color: black;
@@ -59,32 +59,22 @@ export const AboutInfoContainer = styled.div`
   justify-content: flex-end;
   padding-right: 20px;
   position: absolute;
-  top: 68%;
-  left: 54%;
-
+  top: 17em;
   max-width: auto;
   padding: 3px;
-
-
 `;
 
 export const AboutInfo = styled.p`
   color: white;
   padding: 2rem;
-  text-align:center ;
+  text-align: center;
 `;
-
 
 export const SocialsContainer = styled(motion.div)`
   display: flex;
   flex-flow: row;
   justify-content: flex-end;
-  padding-right: 20px;
-  position: absolute;
-  top: 68%;
-  left: 54%;
 `;
-
 
 export const SocalIcons = styled(motion.div)`
   font-size: 1rem;

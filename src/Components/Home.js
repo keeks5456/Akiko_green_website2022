@@ -33,42 +33,16 @@ const Home = ({ blogs, profile }) => {
 
   return (
     <>
+    <Navbar />
       <Container id="home">
-        <Navbar />
-        <ProfileFaceImg
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1 }}
-        ></ProfileFaceImg>
-        <NameHeader
-          color="black"
-          initial={{ opacity: 0 }}
-          animate={{
-            x: "28rem",
-            y: "-26rem",
-            opacity: 1,
-          }}
-          transition={{ type: "spring", stiffness: 100, delay: 1.5 }}
-        >
+                <NameHeader>
           Akiko Green
         </NameHeader>
-        <WelcomeHeader
-          color="black"
-          as={motion.h4}
-          initial={{ opacity: 0 }}
-          animate={{
-            x: "31rem",
-            y: "-25rem",
-            opacity: 1,
-          }}
-          transition={{
-            type: "spring",
-            stiffness: 100,
-            delay: 2,
-          }}
-        >
+        <WelcomeHeader>
           Full-Stack Developer
         </WelcomeHeader>
+        <ProfileFaceImg></ProfileFaceImg>
+
 
         <AboutInfoContainer>
           <AboutInfo>
