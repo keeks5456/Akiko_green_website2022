@@ -3,6 +3,7 @@ import axios from "axios";
 import { css } from "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Components/Home";
+import About from "./Components/About"
 
 
 function App() {
@@ -51,7 +52,8 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home blogs={blogs} profile={profile} />} />
-      </Routes>
+        <Route path="/about" element={<About />}/>
+        </Routes>
     </>
   );
 }

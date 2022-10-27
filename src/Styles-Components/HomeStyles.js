@@ -52,6 +52,29 @@ export const ProfileFaceImg = styled(motion.img)`
   opacity: 0.55;
 `;
 
+export const AboutInfoContainer = styled.div`
+  /* max-width: 550px; */
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  padding-right: 20px;
+  position: absolute;
+  top: 68%;
+  left: 54%;
+
+  max-width: auto;
+  padding: 3px;
+
+
+`;
+
+export const AboutInfo = styled.p`
+  color: white;
+  padding: 2rem;
+  text-align:center ;
+`;
+
+
 export const SocialsContainer = styled(motion.div)`
   display: flex;
   flex-flow: row;

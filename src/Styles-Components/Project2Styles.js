@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const ProjectContainer = styled.div`
-  padding-top: 13rem;
+padding-bottom: 5em;
   height: 100%;
   background-color: #28282b;
 `;

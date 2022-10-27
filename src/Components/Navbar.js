@@ -15,13 +15,14 @@ const Navbar = () => {
         >
           Home
         </NavLink>
-        <NavLink
+{ /*      <NavLink
           to="#about"
           smooth
           className={({ isActive }) => (isActive ? "active" : "main-nav")}
         >
           About
         </NavLink>
+  */}
         <NavLink
           to="#projects"
           smooth
