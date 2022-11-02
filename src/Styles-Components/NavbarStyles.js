@@ -5,7 +5,7 @@ export const NavContainer = styled.div`
   display: flex;
   margin: 10px 0 10px 0;
   flex-direction: "column";
-  justify-content: space-between;
+  justify-content: flex-end;
   position: relative;
 `;
 
@@ -15,8 +15,9 @@ export const SocialsContainer = styled(motion.div)`
 `;
 
 export const SocalIcons = styled(motion.div)`
-  font-size: 1rem;
+  /* font-size: 2rem; */
   color: grey;
+  align-self:flex-end ;
 
   &:hover {
     color: ${(props) => props.color};

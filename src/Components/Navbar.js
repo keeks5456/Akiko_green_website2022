@@ -21,11 +21,11 @@ const Navbar = () => {
   };
 
   return (
-    <motion.div animate={{ scale: 1 }} transition={{ duration: 0.5 }}>
-      <NavContainer>
-        <SocialsContainer>
-          {displayIcons()}
-        </SocialsContainer>
+    <div>
+    <NavContainer>
+    <SocialsContainer>
+      {displayIcons()}
+    </SocialsContainer>
         <NavLink
           to="#home"
           smooth
@@ -49,7 +49,7 @@ const Navbar = () => {
           Blogs
         </NavLink>
       </NavContainer>
-    </motion.div>
+    </div>
   );
 };
 

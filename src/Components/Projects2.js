@@ -1,6 +1,5 @@
 import React from "react";
 import { projectData } from "../Utilities/ProjectData";
-import { iconArray } from "../Utilities/ProjectData";
 import { motion } from "framer-motion";
 
 //styles
@@ -10,10 +9,11 @@ import {
   ProjectCard,
   ProjectImg,
   CardTitle,
+  AnchorTagContainer,
   AnchorTag,
-  LanguagesContainer,
   Icons,
 } from "../Styles-Components/Project2Styles";
+
 const Projects2 = () => {
   const allProjects = () => {
     if (projectData) {
@@ -21,13 +21,15 @@ const Projects2 = () => {
         <ProjectCard>
           <ProjectImg src={project.image} alt={project.title}></ProjectImg>
 
-          {/* <CardTitle>{project.title}</CardTitle>
-            <a href={project.github} rel="noreferrer" target="_blank">
+          <CardTitle>{project.title}</CardTitle>
+          <AnchorTagContainer>
+            <AnchorTag href={project.github} rel="noreferrer" target="_blank">
               Github
-            </a>
+            </AnchorTag>
             <AnchorTag href={project.demo} rel="noreferrer" target="_blank">
               Demo
-      </AnchorTag> */}
+            </AnchorTag>
+          </AnchorTagContainer>
         </ProjectCard>
       ));
     }
@@ -35,20 +37,9 @@ const Projects2 = () => {
 
   allProjects();
 
-  const displayLanguages = () => {
-    return iconArray.map((icon) => (
-      <>
-        <Icons className="icon" key={icon.id} color={icon.color}>
-          {icon.lang}
-        </Icons>
-      </>
-    ));
-  };
-
   return (
     <ProjectContainer as={motion.div}>
-    <LanguagesContainer  id="projects">{displayLanguages()}</LanguagesContainer>
-    <ProjectCardContainer>{allProjects()}</ProjectCardContainer>
+      <ProjectCardContainer>{allProjects()}</ProjectCardContainer>
     </ProjectContainer>
   );
 };

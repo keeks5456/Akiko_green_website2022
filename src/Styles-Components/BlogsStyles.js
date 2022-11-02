@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+
 export const BlogContainer = styled.div`
   max-width: 100%;
   height: 100%;
@@ -9,8 +10,7 @@ export const BlogContainer = styled.div`
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 12px;
   grid-row-gap: 14px;
-  padding:30px 14px 14px 14px;
-
+  padding: 30px 14px 14px 14px;
 `;
 
 export const BlogCard = styled.div`
@@ -27,21 +27,17 @@ export const BlogImg = styled.img`
 
 export const CardTitle = styled.h4`
   padding-bottom: 10px;
-  font-family: Arial, Helvetica, sans-serif ;
-  padding-top:14px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 14px;
 `;
-
-
 
 export const ArticleP = styled.p`
   font-size: 13px;
-  padding-bottom:10px ;
-  font-family: Arial, Helvetica, sans-serif ;
-
-`
+  padding-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+`;
 
 export const ArticleLink = styled(motion.div)`
   display: flex;
   justify-content: space-between;
-  
 `;

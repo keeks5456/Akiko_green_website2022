@@ -11,15 +11,17 @@ export const ProjectCardContainer = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  padding-top: 40px;
 `;
 
 export const ProjectCard = styled.div`
-    transition: all 1s ease-out;
+    /* transition: all 1s ease-out; */
+    cursor: pointer;
 
-  &:hover{
+  /* &:hover{
 
     transform: scale(0.95);
-  }
+  } */
 `;
 
 export const ProjectImg = styled.img`
@@ -35,23 +37,24 @@ export const CardTitle = styled.h2`
   font-family: "Leckerli One", cursive;
   text-align: center;
 `;
+
+export const AnchorTagContainer = styled.div`
+  display: flex;
+  justify-content:center ;
+`
 export const AnchorTag = styled.a`
   color: black;
+
 `;
 
-export const LanguagesContainer = styled(motion.div)`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-`;
 
-export const Icons = styled(motion.h1)`
-  font-size: 3rem;
-  color: grey;
-  transition: all 1s ease-out;
+// export const Icons = styled(motion.h1)`
+//   font-size: 3rem;
+//   color: grey;
+//   transition: all 1s ease-out;
 
-  &:hover {
-    color: ${(props) => props.color};
-    transform: scale(1.1);
-  }
-`;
+//   &:hover {
+//     color: ${(props) => props.color};
+//     transform: scale(1.1);
+//   }
+// `;

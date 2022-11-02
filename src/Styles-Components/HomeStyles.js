@@ -38,7 +38,7 @@ export const WelcomeHeader = styled(NameHeader)`
 `;
 
 export const ProfileFaceImg = styled(motion.img)`
-margin: 10px 0 0 10px ;
+  margin: 10px 0 0 10px;
   height: 30rem;
   width: 19rem;
   background-image: url(${akikoFace});
@@ -74,5 +74,3 @@ export const AboutInfo = styled.p`
   padding: 2rem;
   text-align: center;
 `;
-
-
