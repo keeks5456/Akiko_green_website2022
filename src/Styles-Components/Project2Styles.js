@@ -15,13 +15,9 @@ export const ProjectCardContainer = styled.div`
 `;
 
 export const ProjectCard = styled.div`
-    /* transition: all 1s ease-out; */
     cursor: pointer;
 
-  /* &:hover{
 
-    transform: scale(0.95);
-  } */
 `;
 
 export const ProjectImg = styled.img`

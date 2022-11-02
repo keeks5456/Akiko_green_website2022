@@ -18,15 +18,14 @@ const Projects2 = () => {
   const allProjects = () => {
     if (projectData) {
       return projectData.map((project) => (
-        <ProjectCard>
-          <ProjectImg src={project.image} alt={project.title}></ProjectImg>
-
-          <CardTitle>{project.title}</CardTitle>
-          <AnchorTagContainer>
-            <AnchorTag href={project.github} rel="noreferrer" target="_blank">
+        <ProjectCard className="project-card">
+          <ProjectImg className="card-image" src={project.image} alt={project.title}></ProjectImg>
+          <CardTitle className="title">{project.title}</CardTitle>
+          <AnchorTagContainer className="focus-point anchor-container">
+            <AnchorTag className="anchor-tag" href={project.github} rel="noreferrer" target="_blank">
               Github
             </AnchorTag>
-            <AnchorTag href={project.demo} rel="noreferrer" target="_blank">
+            <AnchorTag className="anchor-tag" href={project.demo} rel="noreferrer" target="_blank">
               Demo
             </AnchorTag>
           </AnchorTagContainer>
