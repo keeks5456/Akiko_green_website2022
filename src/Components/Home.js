@@ -1,48 +1,27 @@
 import React from "react";
 import Navbar from "./Navbar";
 // import Contact from "./Contact";
-// import Projects from "./Projects";
 import Projects2 from "./Projects2";
-// import About from "./About";
 import Blogs from "./Blogs";
 import { motion } from "framer-motion";
-
-//socials icons
-import { socialIcons } from "../Utilities/ProjectData";
-
 import {
   Container,
   NameHeader,
   WelcomeHeader,
   ProfileFaceImg,
   AboutInfo,
-  AboutInfoContainer,
-  SocialsContainer,
-  SocalIcons,
+  AboutInfoContainer
 } from "../Styles-Components/HomeStyles";
+
 const Home = ({ blogs, profile }) => {
-  const displayIcons = () => {
-    return socialIcons.map((icon) => (
-      <>
-        <SocalIcons className="icon" key={icon.id} color={icon.color}>
-          {icon.social}
-        </SocalIcons>
-      </>
-    ));
-  };
 
   return (
     <>
-    <Navbar />
+      <Navbar />
       <Container id="home">
-                <NameHeader>
-          Akiko Green
-        </NameHeader>
-        <WelcomeHeader>
-          Full-Stack Developer
-        </WelcomeHeader>
+        <NameHeader>Akiko Green</NameHeader>
+        <WelcomeHeader>Full-Stack Developer</WelcomeHeader>
         <ProfileFaceImg></ProfileFaceImg>
-
 
         <AboutInfoContainer>
           <AboutInfo>
@@ -50,20 +29,14 @@ const Home = ({ blogs, profile }) => {
             barista local cafes. To a hungry, passionate, and determine Full
             Stacks Engineer. I told myself years ago that working in tech were
             for the smart, successful and rich individuals. I thought psychology
-            was my true passion. Two years later, molding myself to be a POC woman in tech,
-             ready to take on all the cchallenges that come my way. 
+            was my true passion. Two years later, molding myself to be a POC
+            woman in tech, ready to take on all the cchallenges that come my
+            way.
           </AboutInfo>
         </AboutInfoContainer>
-
-
-          <SocialsContainer>
-            <div>Sneak a peak at my:</div>
-            {displayIcons()}
-          </SocialsContainer>
       </Container>
 
       <Projects2 />
-      {/*<Projects /> */}
       <Blogs blogs={blogs} profile={profile} />
       {/*<Contact /> */}
     </>

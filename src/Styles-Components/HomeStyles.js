@@ -21,8 +21,8 @@ export const NameHeader = styled(motion.h1)`
   color: black;
   text-align: end;
   position: absolute;
-  top: 31%;
-  left: 30%;
+  top: 3em;
+  left: 19em;
   width: fit-content;
 
   /* @media (max-width: 600px) {
@@ -33,18 +33,18 @@ export const NameHeader = styled(motion.h1)`
 `;
 
 export const WelcomeHeader = styled(NameHeader)`
-  top: 41%;
-  left: 30%;
+  top: 6em;
+  left: 17em;
 `;
 
 export const ProfileFaceImg = styled(motion.img)`
+margin: 10px 0 0 10px ;
   height: 30rem;
   width: 19rem;
   background-image: url(${akikoFace});
   background-repeat: no-repeat, repeat;
   background-position: center;
   background-size: cover;
-
   border-radius: 10px;
   border: transparent;
   background-color: black;
@@ -65,23 +65,14 @@ export const AboutInfoContainer = styled.div`
 `;
 
 export const AboutInfo = styled.p`
+  display: flex;
+  width: 32rem;
+  position: absolute;
+  left: 28rem;
+
   color: white;
   padding: 2rem;
   text-align: center;
 `;
 
-export const SocialsContainer = styled(motion.div)`
-  display: flex;
-  flex-flow: row;
-  justify-content: flex-end;
-`;
 
-export const SocalIcons = styled(motion.div)`
-  font-size: 1rem;
-  color: grey;
-  display: flex;
-
-  &:hover {
-    color: ${(props) => props.color};
-  }
-`;
