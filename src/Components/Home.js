@@ -79,15 +79,16 @@ const Home = ({ blogs, profile }) => {
             woman in tech, ready to take on all the challenges that come my way.
           </AboutInfo>
         </AboutInfoContainer>
-        <SocialsContainer>
-          {/* 
+       { /* <SocialsContainer>
+          
             <div>Sneak a peak at my:</div>
-          displayIcons() */}
-          /*{" "}
+          displayIcons()
+          {" "}
         </SocialsContainer>{" "}
-        */
+        */}
       </Container>
       <h1 class="project-header">Projects</h1>
+      <h4 class="construction">Under Construction...</h4>
       <Projects2 />
       <h1 className="blog-header">Blogs</h1>
       <Blogs blogs={blogs} profile={profile} />
