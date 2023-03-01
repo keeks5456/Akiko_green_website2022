@@ -18,15 +18,15 @@ import {
   AboutInfo,
   AboutInfoContainer,
   SocialsContainer,
-  SocalIcons,
+  SocialIcons
 } from "../Styles-Components/HomeStyles";
 const Home = ({ blogs, profile }) => {
   const displayIcons = () => {
-    return socialIcons.map((icon) => (
+    return socialIcons.map(icon => (
       <>
-        <SocalIcons className="icon" key={icon.id} color={icon.color}>
+        <SocialIcons className="icon" key={icon.id} color={icon.color}>
           {icon.social}
-        </SocalIcons>
+        </SocialIcons>
       </>
     ));
   };
@@ -46,7 +46,7 @@ const Home = ({ blogs, profile }) => {
           animate={{
             x: "28rem",
             y: "-26rem",
-            opacity: 1,
+            opacity: 1
           }}
           transition={{ type: "spring", stiffness: 100, delay: 1.5 }}
         >
@@ -59,37 +59,37 @@ const Home = ({ blogs, profile }) => {
           animate={{
             x: "31rem",
             y: "-25rem",
-            opacity: 1,
+            opacity: 1
           }}
           transition={{
             type: "spring",
             stiffness: 100,
-            delay: 2,
+            delay: 2
           }}
         >
           Full-Stack Developer
         </WelcomeHeader>
-
         <AboutInfoContainer>
           <AboutInfo>
             A San Francisco State University psychology major, working as a
             barista local cafes. To a hungry, passionate, and determine Full
             Stacks Engineer. I told myself years ago that working in tech were
             for the smart, successful and rich individuals. I thought psychology
-            was my true passion. Two years later, molding myself to be a POC woman in tech,
-             ready to take on all the cchallenges that come my way. 
+            was my true passion. Two years later, molding myself to be a POC
+            woman in tech, ready to take on all the challenges that come my way.
           </AboutInfo>
         </AboutInfoContainer>
-
-
-          <SocialsContainer>
+        <SocialsContainer>
+          {/* 
             <div>Sneak a peak at my:</div>
-            {displayIcons()}
-          </SocialsContainer>
+          displayIcons() */}
+          /*{" "}
+        </SocialsContainer>{" "}
+        */
       </Container>
-
+      <h1 class="project-header">Projects</h1>
       <Projects2 />
-      {/*<Projects /> */}
+      <h1 className="blog-header">Blogs</h1>
       <Blogs blogs={blogs} profile={profile} />
       {/*<Contact /> */}
     </>

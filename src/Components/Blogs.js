@@ -38,7 +38,7 @@ const Blogs = ({ blogs, profile }) => {
             </div>
             <div className="card-body">
               <CardTitle>
-                <div className="postTitle" rel="noreferrer" target="_blank">
+                <div className="postTitle" target="_blank">
                   {shortText(post.title, 0, 80)} 
                 </div>
               </CardTitle>
@@ -47,6 +47,8 @@ const Blogs = ({ blogs, profile }) => {
                   {shortText(toText(post.description), 0, 150)}
                 </ArticleP>
               }
+              <a href={post.link} target="_blank"> 
+               SEE MORE </a>
             </div>
           </BlogCard>
         ))

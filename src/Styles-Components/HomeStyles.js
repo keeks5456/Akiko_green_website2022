@@ -86,7 +86,7 @@ export const SocialsContainer = styled(motion.div)`
 `;
 
 
-export const SocalIcons = styled(motion.div)`
+export const SocialIcons = styled(motion.div)`
   font-size: 1rem;
   color: grey;
   display: flex;

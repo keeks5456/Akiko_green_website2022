@@ -17,7 +17,6 @@ a {
 }
 
 a:hover {
-  color: darkgrey;
   text-decoration: underline;
 }
 
@@ -51,6 +50,12 @@ textarea::-webkit-input-placeholder {
 
 }
 
-.postTitle{
-  /* padding-right: 20px; */
+.blog-header{
+  font-size: 50px;
+  color: darkgrey;
+}
+
+.project-header{
+    font-size: 50px;
+    color: darkgrey;
 }
